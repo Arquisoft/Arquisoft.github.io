@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta charset="utf-8" />
+ <title>Software architecture</title>
+ <meta content="width=device-width, initial-scale=1" name="viewport" />
+ <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+ <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+ <script src="https://dokie.li/scripts/dokieli.js"></script>    
+</head>
+
+<body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ owl: http://www.w3.org/2002/07/owl# 
+ xsd: http://www.w3.org/2001/XMLSchema# 
+ dcterms: http://purl.org/dc/terms/ 
+ dctypes: http://purl.org/dc/dcmitype/ 
+ foaf: http://xmlns.com/foaf/0.1/ 
+ pimspace: http://www.w3.org/ns/pim/space# 
+ cc: https://creativecommons.org/ns# 
+ skos: http://www.w3.org/2004/02/skos/core# 
+ prov: http://www.w3.org/ns/prov# 
+ schema: http://schema.org/ 
+ void: http://rdfs.org/ns/void# 
+ rsa: http://www.w3.org/ns/auth/rsa# 
+ cert: http://www.w3.org/ns/auth/cert# 
+ wgs: http://www.w3.org/2003/01/geo/wgs84_pos# 
+ bibo: http://purl.org/ontology/bibo/ 
+ sioc: http://rdfs.org/sioc/ns# 
+ doap: http://usefulinc.com/ns/doap# 
+ dbr: http://dbpedia.org/resource/ 
+ dbp: http://dbpedia.org/property/ 
+ sio: http://semanticscience.org/resource/ 
+ opmw: http://www.opmw.org/ontology/ 
+ deo: http://purl.org/spar/deo/ 
+ doco: http://purl.org/spar/doco/ 
+ cito: http://purl.org/spar/cito/ 
+ fabio: http://purl.org/spar/fabio/ 
+ oa: http://www.w3.org/ns/oa# 
+ as: https://www.w3.org/ns/activitystreams# 
+ ldp: http://www.w3.org/ns/ldp# 
+ solid: http://www.w3.org/ns/solid/terms# 
+ acl: http://www.w3.org/ns/auth/acl# 
+ dio: https://w3id.org/dio#" 
+ typeof="schema:CreativeWork 
+ sioc:Post prov:Entity">
+
+<main>
+<article about="" typeof="schema:Article">
+
+<h1>Software Architecture Course - 2019-20 edition</h1>
+
+<div id="authors">
+ <ul>
+  <li><a href="http://labra.weso.es/" 
+    about="http://labra.weso.es#me" 
+    property="schema:name" 
+	typeof="http://xmlns.com/foaf/0.1/Person">Jose Emilio Labra Gayo</a></li>
+</ul>
+
+<ul id="affiliations">
+  <li id="uniovi">
+    <a
+    about="http://www.wikidata.org/entity/Q2303432" 
+	rel="schema:url" typeof="schema:Organization"
+	property="schema:name"
+    href="http://uniovi.es">University of Oviedo, Spain</a>
+  </li>
+</ul>
+</div>
+
+<h2>Slides</h2>
+<!--
+<ul>
+<li>23/Jan/2019 - Presentation: 
+ <a href="slides/course1819/EN.ASW.TE01_Presentation.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.TE01_Presentacion.pdf">Spanish</a>
+</li>
+<li>30/Jan/2019 - Definitions: 
+ <a href="slides/course1819/EN.ASW.TE02_Definitions.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te02_Definiciones.pdf">Spanish</a>
+</li>
+<li>30/Jan/2019 - Conference "Trends in Software Architecture: A professional (dis)orientation", by Sergio Fernández: 
+ <a href="https://www.slideshare.net/Wikier/trends-in-software-architecture-a-professional-desorientation">Slides</a>
+</li>
+<li>06/Feb/2019 - Software architecture documentation: 
+ <a href="slides/course1819/EN.ASW.TE03_Documentation.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te03_Documentacion.pdf">Spanish</a>
+</li>
+<li>13/Feb/2019 - Quality attributes and design concepts: 
+ <a href="slides/course1819/EN.ASW.TE04_QualityAttributes.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te04_AtributosCalidad.pdf">Spanish</a>
+</li>
+<li>19/Feb/2019 - Sofware taxonomies: Construction and maintenance
+ <a href="slides/course1819/EN.ASW.TE05_Construction.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te05_Construccion.pdf">Spanish</a>
+</li>
+<li>27/Feb/2019 and 6/Mar/2019 Sofware taxonomies: Modularity
+ <a href="slides/course1819/EN.ASW.TE06_Modularity.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te06_Modularidad.pdf">Spanish</a>
+</li>
+<li>12/Mar/2019 - Sofware taxonomies: Runtime
+ <a href="slides/course1819/EN.ASW.TE07_Runtime.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te07_Comportamiento.pdf">Spanish</a>
+</li>
+<li>20/Mar/2019 - Conference Software Architecture #10YearsChallenge, 
+ <a href="https://github.com/peibolsang/">Pablo Bermejo</a>
+ (<a href="http://demo-architecture.s3-website-us-east-1.amazonaws.com/">Slides</a>,
+  <a href="https://github.com/peibolsang/architecture-presentation">Source code of slides</a>)
+</li>
+<li>26/Mar/2019 - Sofware taxonomies: Integration
+ <a href="slides/course1819/EN.ASW.TE08_Integration.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te08_Integracion.pdf">Spanish</a>
+</li>
+<li>2/Apr/2019 - Sofware taxonomies: Allocation
+ <a href="slides/course1819/EN.ASW.TE09_Allocation.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te09_Disposicion.pdf">Spanish</a>
+</li>
+<li>2/Apr/2019 - Software architecture and enterprise
+ <a href="slides/course1819/EN.ASW.TE10_Business.pdf">English</a>,
+ <a href="slides/course1819/ES.ASW.Te10_Negocio.pdf">Spanish</a>
+ </li>
+<li>12/Jun/2019: Solid presentation, by Mitzi Laszlo (Solid Manager): 
+ <a href="slides/course1819/SolidPresentationOviedo.pdf">English</a>
+</li>
+<li>12/Jun/2019: Solid Chat Challenge presentation: 
+ <a href="slides/course1819/SolidChatChallenge.pdf">English</a>
+</li>
+</ul>
+-->
+<h2>Links</h2>
+
+<!--<h3>Communication channels</h3>
+<ul>
+<li><a href="https://gitter.im/Arquisoft/dechat">dechat gitter channel</a>
+</ul> -->
+
+<h3>Coding style guides</h3>
+<ul>
+<li><a href="https://github.com/i0natan/nodebestpractices">Node best practices</a>
+</ul>
+
+<h3>Software architecture documentation</h3>
+<ul>
+<li><a href="http://arc42.org">Arc42</a></li>
+<li><a href="https://asciidoctor.org/">Asciidoctor</a></li>
+<li><a href="http://plantuml.com/">PlantUML</a></li>
+<li><a href="https://real-world-plantuml.com/">Real-world PlantUML</a></li>
+</ul>
+
+<h3>Solid</h3>
+<ul>
+<li><a href="https://forum.solidproject.org/">Forum</a></li>
+<li><a href="https://www.reddit.com/r/SOLID/">Reddit</a></li>
+<li><a href="https://gitter.im/home/explore">Gitter</a></li>
+<li>Awesome solid links: 
+  <a href="https://github.com/kustomzone/awesome-solid">one</a>, 
+  <a href="https://github.com/itsee/awesome-solid">two</a>
+</li>
+<li><a href="https://www.bourgeoa.ga/solid-wiki">Wiki for beginners</a></li> 
+<li><a href="https://vimeo.com/316638368">Solid World event (6/Feb/19) recording</a></li>
+<li><a href="https://github.com/pheyvaer/solid-chess">Solid Chess</a></li>
+<li><a href="http://www.validatingrdf.com/tutorial/iswc2018/">Validating RDF data tutorial</a>: 
+ <a href="https://figshare.com/articles/RDF_data_model/7159796">Overview to RDF data model</a>
+</li>
+</ul>
+
+<h3>Quality attributes</h3>
+<ul>
+<li><a href="ISO25010.html">ISO25010: Quality attributes MindMap</a></li>
+<li><a href="http://iso25000.com/index.php/en/iso-25000-standards/iso-25010">ISO 25010 Software product quality</a></li>
+</ul>
+
+<h2>Online references</h2>
+
+<ul>
+<li><a href="https://leanpub.com/arc42inpractice/read">Communicating Software Architectures</a>: lean, effective and painless documentation</li>
+</ul>
+
+<h2>Practical assignment</h2>
+Description: 
+ <a href="https://labra.solid.community/public/SoftwareArchitecture/1920/AssignmentDescription">English</a>, 
+ <a href="https://labra.solid.community/public/SoftwareArchitecture/1920/EnunciadoPractica/">Spanish</a>
+
+<!--<h2>Seminar assignment</h2>
+Description: 
+ <a href="https://labra.solid.community/public/SoftwareArchitecture/1920/SeminarDescription/">English</a>, 
+ <a href="https://labra.solid.community/public/SoftwareArchitecture/1920/EnunciadoSeminario/">Spanish</a>
+--> 
+</article>
+</main>
+</body>
+</html>
