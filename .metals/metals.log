@@ -1,5 +1,0 @@
-2021.01.13 19:13:13 INFO  Started: Metals version 0.9.8 in workspace 'C:\src\cursos\asw\Arquisoft.github.io' for client vscode.
-2021.01.13 19:13:15 INFO  time: initialize in 2.35s
-2021.01.13 19:13:16 WARN  Build server is not auto-connectable.
-2021.01.13 19:13:16 WARN  no build tool detected in workspace 'C:\src\cursos\asw\Arquisoft.github.io'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
-2021.01.13 19:45:01 INFO  shutting down Metals
