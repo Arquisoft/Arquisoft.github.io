@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta charset="utf-8" />
+ <title>Radarin</title>
+ <link href="../styles/screen.css" media="screen" rel="stylesheet" />
+ <link href="../styles/print.css" media="print" rel="stylesheet" />
+ <meta content="width=device-width, initial-scale=1" name="viewport" />
+ <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+ <link href="https://dokie.li/media/css/do.css" media="all" rel="stylesheet" />
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" />
+ <script src="https://dokie.li/scripts/simplerdf.js"></script>
+ <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
+ <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
+ <script src="https://dokie.li/scripts/do.js"></script>
+</head>
+
+<body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ pimspace: http://www.w3.org/ns/pim/space# cc: https://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: http://schema.org/ void: http://rdfs.org/ns/void# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# bibo: http://purl.org/ontology/bibo/ sioc: http://rdfs.org/sioc/ns# doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# ldp: http://www.w3.org/ns/ldp# solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+ <main>
+ <article about="" typeof="schema:Article">
+  <dl id="document-modified">
+   <dt>Modificado</dt><dd><time content="2020-02-05T05:48:56.986Z" datatype="xsd:dateTime" datetime="2020-02-05T05:48:56.986Z" property="schema:dateModified">2021-01-24</time></dd>
+  </dl>
+  <dl id="document-license">
+      <dt>Licencia</dt>
+      <dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="schema:license" title="Creative Commons Zero">CC0 1.0</a></dd>
+ </dl>
+ <dl id="document-status">
+     <dt>Estado del documento</dt>
+     <dd prefix="pso: http://purl.org/spar/pso/" rel="pso:holdsStatusInTime" resource="#ad1d50ad-1147-41d9-a20d-9985c151b8bd"><span rel="pso:withStatus" resource="http://purl.org/spar/pso/draft" typeof="pso:PublicationStatus">Version 1.0</span></dd>
+ </dl>
+        
+<h1>Radarin</h1>
+<ul id="affiliations">
+  <li id="uniovi"><a href="http://arquisoft.github.io">Arquitectura del software</a>, <a href="http://uniovi.es">Universidad of Oviedo</a>, España</li>
+</ul>
+
+<section id="introduction">
+<h2>Introducción</h2>
+<p>Radarin será un sistema para facilitar encuentros entre amigos utilizando nuevas tecnologías. 
+   La aplicación podrá acceder a la información de localización del teléfono móvil de los usuarios que voluntariamente la tengan activada y 
+   permitirá que otros usuarios que sean sus amigos puedan conocer cuándo están cerca. </p>
+<p>La aplicación permitirá de esa forma avisar a un usuario cuándo tiene amigos cerca para que puedan entrar en contacto. </p>
+<p>El sistema será compatible con el <a href="https://solidproject.org/">proyecto SOLID</a> 
+    y no almacenará información personal sobre los usuarios de forma centralizada sino que 
+    pedirá permiso para obtener dicha información al pod del usuario correspondiente.
+</p>
+<p> El sistema solamente almacenará localizaciones e instantes de tiempo en los que han ocurrido dichas localizaciones
+    pero evitará almacenar cualquier otro tipo de información personal sobre los usuarios.
+</p>
+</section>      
+
+<section id="requirements"><h2>Requisitos de alto nivel</h2>
+ <ul>
+     <li>Se contemplan al menos 2 componentes software:
+         <ul>
+             <li>Una aplicación web que funcionará en un servidor en el que se almacenará información sobre localizaciones. 
+                 La aplicación permitirá que los usuarios puedan gestionar y visualizar sus localizaciones y 
+                 también incluirá opciones de administración para gestionar usuarios y monitorizar el estado del servidor.
+             </li>
+         <li>Una aplicación que funcionará en el dispositivo móvil de los usuarios enviando localizaciones al servidor y 
+             recibiendo notificaciones de usuarios conocidos cercanos.</li>         
+         </ul>
+        </li>
+     <li>El servidor almacenará la información mínima necesaria sobre un usuario, el resto de información del usuario, como sus amigos, será consultada en el pod de dicho usuario</li>
+     <li>El sistema será desplegable desde contenedores <a href="https://www.docker.com/">docker</a> y 
+        también estará desplegada en un servicio en la nube como <a href="https://heroku.com/">heroku</a>
+    </li>
+    <li>La aplicación desplegada también incluirá un sistema de monitorización.</li>
+    <li>Se desarrollarán pruebas unitarias, de aceptación y 
+        de carga que se ejecutarán de forma automatizada a través de un servidor de integración continua.
+    </li>
+</ul>
+
+</section><section id="OPTIONAL"><h2>Características opcionales</h2>
+<ul>
+ <li>La aplicación podrá ofrecer otros servicios a los usuarios como notificaciones de usuarios que están cerca de ellos, sugerencias de posibles amigos, fotografías o material multimedia geolocalizado y publicado por sus amigos, etc.
+ </li>
+ <li>Se podrán enriquecer las localizaciones con comentarios, imágenes, vídeos, etc.</li>
+ <li>El sistema podrá acceder a la información del teléfono móvil mediante bluetooth</li>
+ <li>La aplicación web podrá visualizar mapas con las localizaciones realizadas por un usuario.</li>
+ <li>Se podrán ofrecer otro tipo de visualizaciones sobre las localizaciones de los usuarios junto con las de sus amigos</li>
+ <li>Se podrán etiquetas las localizaciones para facilitar su búsqueda</li>
+ <li>La aplicación podría permitir enviar mensajes entre usuarios cercanos para que entren en contacto</li>
+ <li>Se puede añadir la posibilidad de notificación de casos positivos de COVID para facilitar el seguimiento de las personas conocidas con las que alguien haya podido interactuar.</li>
+</ul>
+</section>
+
+<section id="assessment">
+<h2>Criterios de valoración</h2>
+<p>Los siguientes criterios serán tenidos en cuenta a la hora de evaluar la solución:</p>
+<ul>
+<li>Estética y facilidad de uso por personas no técnicas</li>
+<li>Seguridad y respeto a la privacidad de los usuarios</li>
+<li>Capacidad de respuesta de la aplicación</li>
+<li>Originalidad de la solución.</li>
+<li>Usabilidad de la documentación técnica teniendo en cuenta los registros de decisión arquitectónica</li>
+<li>Calidad del código analizada tanto manual como automáticamente.
+    Se tendrá en cuenta la cobertura de código en las pruebas así 
+    como la automatización de los procesos de despliegue y pruebas.</li>
+</ul>
+</section>
+
+<section id="challenge">
+<h2>Concurso Solid</h2>
+
+Los equipos podrán participar voluntariamente en el concurso SOLID que se organiza en colaboración con 
+<a href="https://inrupt.com/">Inrupt</a> y <a href="https://www.empathy.co/">Empathy</a>. 
+Se publicará más información sobre cómo participar más adelante.
+</section>
+</article>
+</main>
+</body>
+</html>
