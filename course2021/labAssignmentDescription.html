@@ -51,22 +51,27 @@
 
 <section id="requirements"><h2>High level requirements</h2>
  <ul>
-     <li>2 software components are considered at least:
-         <ul>
-             <li>A Web application that will run in a server and that will store locations. 
-         The application will allow the users to manage and visualize locations and it will also include other admin options to manage users and 
-         monitor server status.</li>
-         <li>An application that will run in user's mobile phone sending locations to the server and receiving notifications from nearby friend users. </li>         
-         </ul>
-        </li>
-     <li>The application that acts as a server will store the minimal information about a user, 
-         the rest of user information, like the friends, will be queried to the user's pod</li>
-     <li>The system will be deployed from <a href="https://www.docker.com/">docker</a> 
-        containers and it will also be deployed in a cloud service like 
-        <a href="https://heroku.com/">heroku</a></li>
-     <li>The deployed web application will contain some monitoring system.</li>
-     <li>It is required to develop unit tests, acceptance tests and load tests that 
-         will be run automatically in a continuous integration server.</li>
+ <li>2 software components are considered at least:
+  <ul>
+   <li>A Web application that will run in a server and that will store locations. 
+       The application will allow the users to manage and visualize locations and 
+       it will also include other admin options to manage users and 
+       monitor server status.
+   </li>
+   <li>An application that will run in user's mobile phone sending locations 
+       to the server and receiving notifications from nearby friend users.
+    </li>
+  </ul>
+ </li>
+ <li>The application that acts as a server will store the minimal information about a user, 
+     the rest of user information, like the friends, will be queried to the user's pod</li>
+ <li>The system will be deployed from <a href="https://www.docker.com/">docker</a> 
+     containers and it will also be deployed in a cloud service like 
+     <a href="https://heroku.com/">heroku</a>
+ </li>
+ <li>The deployed web application will contain some monitoring system.</li>
+ <li>It is required to develop unit tests, acceptance tests and load tests that 
+     will be run automatically in a continuous integration server.</li>
 </ul>
 
 </section><section id="OPTIONAL"><h2>Optional features</h2>
