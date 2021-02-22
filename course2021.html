@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <meta charset="utf-8" />
- <title>Software architecture Course 20-21</title>
- <meta content="width=device-width, initial-scale=1" name="viewport" />
- <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
- <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
- <script src="https://dokie.li/scripts/dokieli.js"></script>
- </head>
- <body 
-  about="" 
-  prefix=
-"rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+<title>Software architecture Course 20-21</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+<link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+<script src="https://dokie.li/scripts/dokieli.js"></script>
+</head>
+
+<body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
  rdfs: http://www.w3.org/2000/01/rdf-schema# 
  owl: http://www.w3.org/2002/07/owl# 
  xsd: http://www.w3.org/2001/XMLSchema# 
@@ -43,147 +41,129 @@
  ldp: http://www.w3.org/ns/ldp# 
  solid: http://www.w3.org/ns/solid/terms# 
  acl: http://www.w3.org/ns/auth/acl# 
- dio: https://w3id.org/dio#" 
-typeof="schema:CreativeWork 
+ dio: https://w3id.org/dio#" typeof="schema:CreativeWork 
  sioc:Post 
  prov:Entity">
 
 
-<main>
-<article about="" typeof="schema:Article">
+    <main>
+        <article about="" typeof="schema:Article">
 
-<h1>Software Architecture Course - 2020-21 edition</h1>
+            <h1>Software Architecture Course - 2020-21 edition</h1>
 
-<div id="authors">
- <ul>
-  <li><a href="http://labra.weso.es/"
-    about="http://labra.weso.es#me"
-    property="schema:name"
-	typeof="http://xmlns.com/foaf/0.1/Person">Jose Emilio Labra Gayo</a></li>
-  <li><a href="https://pglez82.github.io/"
-        about="https://pglez82.github.io/"
-        property="schema:name"
-        typeof="http://xmlns.com/foaf/0.1/Person">Pablo González</a></li>
-  <li><a href="https://www.linkedin.com/in/irene-cid-81158148/"
-         about="https://www.linkedin.com/in/irene-cid-81158148/"
-         property="schema:name"
-         typeof="http://xmlns.com/foaf/0.1/Person">Irene Cid Rico</a></li>
-  <li><a href="https://www.linkedin.com/in/paulinoalvarez/"
-            about="https://www.linkedin.com/in/paulinoalvarez/"
-            property="schema:name"
-            typeof="http://xmlns.com/foaf/0.1/Person">Paulino Álvarez Ondina</a></li>
-   </ul>
+            <div id="authors">
+                <ul>
+                    <li><a href="http://labra.weso.es/" about="http://labra.weso.es#me" property="schema:name" typeof="http://xmlns.com/foaf/0.1/Person">Jose Emilio Labra Gayo</a></li>
+                    <li><a href="https://pglez82.github.io/" about="https://pglez82.github.io/" property="schema:name" typeof="http://xmlns.com/foaf/0.1/Person">Pablo González</a></li>
+                    <li><a href="https://www.linkedin.com/in/irene-cid-81158148/" about="https://www.linkedin.com/in/irene-cid-81158148/" property="schema:name" typeof="http://xmlns.com/foaf/0.1/Person">Irene Cid Rico</a></li>
+                    <li><a href="https://www.linkedin.com/in/paulinoalvarez/" about="https://www.linkedin.com/in/paulinoalvarez/" property="schema:name" typeof="http://xmlns.com/foaf/0.1/Person">Paulino Álvarez Ondina</a></li>
+                </ul>
 
-<ul id="affiliations">
-  <li id="uniovi">
-    <a
-    about="http://www.wikidata.org/entity/Q2303432"
-	rel="schema:url" typeof="schema:Organization"
-	property="schema:name"
-    href="http://uniovi.es">University of Oviedo, Spain</a>
-  </li>
-</ul>
-</div>
+                <ul id="affiliations">
+                    <li id="uniovi">
+                        <a about="http://www.wikidata.org/entity/Q2303432" rel="schema:url" typeof="schema:Organization" property="schema:name" href="http://uniovi.es">University of Oviedo, Spain</a>
+                    </li>
+                </ul>
+            </div>
 
-<h2>Lecture notes slides</h2>
+            <h2>Lecture notes slides</h2>
 
-<table>
-  <tr>
-    <th>Date</th>
-    <th>Title</th>
-    <th>Slides</th>
-    <th>Video</th>
-  </tr>
-  <tr>
-    <td>03/Feb/2021</td>
-    <td>Presentation</td>
-    <td>
-      <a href="slides/course2021/EN.ASW.TE01_Presentation.pdf">English</a>,
-      <a href="slides/course2021/ES.ASW.TE01_Presentacion.pdf">Spanish</a>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>03/Feb/2021</td>
-    <td>What is software architecture</td>
-    <td><a href="slides/course2021/EN.ASW.TE02_Definitions.pdf">English</a>,
-        <a href="slides/course2021/ES.ASW.Te02_Definiciones.pdf">Spanish</a>
-    </td>
-    <td>
-      Part 1: 
-          <a href="https://youtu.be/LvYFkgUjp7k">English</a>,    
-          <a href="https://youtu.be/YvikY9oLYbg">Spanish</a><br/>
-      Part 2
-          <a href="https://youtu.be/V4CKgNpGgGU">English</a>,  
-          <a href="https://youtu.be/5u32UNGJ1B8">Spanish</a>
-     </td>
-  </tr>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Slides</th>
+                    <th>Video</th>
+                </tr>
+                <tr>
+                    <td>03/Feb/2021</td>
+                    <td>Presentation</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE01_Presentation.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.TE01_Presentacion.pdf">Spanish</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>03/Feb/2021</td>
+                    <td>What is software architecture</td>
+                    <td><a href="slides/course2021/EN.ASW.TE02_Definitions.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te02_Definiciones.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        Part 1:
+                        <a href="https://youtu.be/LvYFkgUjp7k">English</a>,
+                        <a href="https://youtu.be/YvikY9oLYbg">Spanish</a><br/> Part 2
+                        <a href="https://youtu.be/V4CKgNpGgGU">English</a>,
+                        <a href="https://youtu.be/5u32UNGJ1B8">Spanish</a>
+                    </td>
+                </tr>
 
-  <tr>
-    <td>10/Feb/2021</td>
-    <td>Communicating software architecture</td>
-    <td><a href="slides/course2021/EN.ASW.TE03_Documentation.pdf">English</a>,
-        <a href="slides/course2021/ES.ASW.Te03_Documentacion.pdf">Spanish</a>
-    </td>
-    <td>
-      <a href="https://youtu.be/OFilk-NnWoM">English</a>, 
-      <a href="https://youtu.be/zVyCMwkJ0PQ">Spanish</a>
-    </td>
-  </tr>
+                <tr>
+                    <td>10/Feb/2021</td>
+                    <td>Communicating software architecture</td>
+                    <td><a href="slides/course2021/EN.ASW.TE03_Documentation.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te03_Documentacion.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/OFilk-NnWoM">English</a>,
+                        <a href="https://youtu.be/zVyCMwkJ0PQ">Spanish</a>
+                    </td>
+                </tr>
 
-  <tr>
-    <td>10/Feb/2021</td>
-    <td>Conference: Open decentralization: Empathy and SOLID for new developers</td>
-    <td>
-      <a href="slides/Conferences/OpeningDecentralisation.pdf">Slides</a>
-    </td>
-    <td>
-      <a href="https://youtu.be/XzBxI3Ep7lU">English</a>, 
-      <a href="https://youtu.be/o5J4T827uuM">Spanish</a>
-    </td>
-  </tr>
+                <tr>
+                    <td>10/Feb/2021</td>
+                    <td>Conference: Open decentralization: Empathy and SOLID for new developers</td>
+                    <td>
+                        <a href="slides/Conferences/OpeningDecentralisation.pdf">Slides</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/XzBxI3Ep7lU">English</a>,
+                        <a href="https://youtu.be/o5J4T827uuM">Spanish</a>
+                    </td>
+                </tr>
 
-  <tr>
-    <td>17/Feb/2021</td>
-    <td>Role of software architect and stakeholders</td>
-    <td>
-      <a href="slides/course2021/EN.ASW.TE04_Rol_SoftwareArchitect.pdf">English</a>,
-      <a href="slides/course2021/ES.ASW.Te04_RolArquitectoSoftware.pdf">Spanish</a>
-    </td>
-    <td>
-      <a href="https://youtu.be/5lI9FAXjPPM">English</a>
-      <a href="https://youtu.be/U61UZdy4fvE">Spanish</a>
-    </td>
-  </tr>
+                <tr>
+                    <td>17/Feb/2021</td>
+                    <td>Role of software architect and stakeholders</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE04_Rol_SoftwareArchitect.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te04_RolArquitectoSoftware.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/5lI9FAXjPPM">English</a>
+                        <a href="https://youtu.be/U61UZdy4fvE">Spanish</a>
+                    </td>
+                </tr>
 
-  <tr>
-    <td>17/Feb/2021</td>
-    <td>Quality attributes</td>
-    <td>
-      <a href="slides/course2021/EN.ASW.TE05_QualityAttributes.pdf">English</a>,
-      <a href="slides/course2021/ES.ASW.Te05_AtributosCalidad.pdf">Spanish</a></li>
-    </td>
-    <td>
-      <a href="https://youtu.be/feodAUeGn0c">English</a>
-      <a href="https://youtu.be/U1Vpk7TUj58">Spanish</a>
-    </td>
-  </tr>
+                <tr>
+                    <td>17/Feb/2021</td>
+                    <td>Quality attributes</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE05_QualityAttributes.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te05_AtributosCalidad.pdf">Spanish</a></li>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/feodAUeGn0c">English</a>
+                        <a href="https://youtu.be/U1Vpk7TUj58">Spanish</a>
+                    </td>
+                </tr>
 
-  <tr>
-    <td>24/Feb/2021</td>
-    <td>Achieving software architecture</td>
-    <td>
-      <a href="slides/course2021/EN.ASW.TE06_AchievingSoftwareArchitecture.pdf">English</a>,
-      <a href="slides/course2021/ES.ASW.Te06_AlcanzandoArquitecturaSoftware.pdf">Spanish</a>
-    </td>
-    <td>
+                <tr>
+                    <td>24/Feb/2021</td>
+                    <td>Achieving software architecture</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE06_AchievingSoftwareArchitecture.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te06_AlcanzandoArquitecturaSoftware.pdf">Spanish</a>
+                    </td>
+                    <td>
 
-    </td>
-  </tr>
+                    </td>
+                </tr>
 
-</table>
+            </table>
 
-<!--
+            <!--
 <li>26/Feb/2020 - Sofware taxonomies: Construction and maintenance
  <a href="slides/course1920/EN.ASW.TE05_Construction.pdf">English</a>,
  <a href="slides/course1920/ES.ASW.Te05_Construccion.pdf">Spanish</a>
@@ -197,13 +177,13 @@ typeof="schema:CreativeWork
  <a href="slides/course1920/EN.ASW.TE07_Runtime.pdf">English</a>,
  <a href="slides/course1920/ES.ASW.Te07_Comportamiento.pdf">Spanish</a>
 </li> -->
-<!--
+            <!--
   <li>20/Mar/2019 - Conference Software Architecture #10YearsChallenge,
  <a href="https://github.com/peibolsang/">Pablo Bermejo</a>
  (<a href="http://demo-architecture.s3-website-us-east-1.amazonaws.com/">Slides</a>,
   <a href="https://github.com/peibolsang/architecture-presentation">Source code of slides</a>)
 </li> -->
-<!-- <li>25/Mar/2020 - Sofware taxonomies: Integration
+            <!-- <li>25/Mar/2020 - Sofware taxonomies: Integration
  <a href="slides/course1920/EN.ASW.TE08_Integration.pdf">English</a>,
  <a href="slides/course1920/ES.ASW.Te08_Integracion.pdf">Spanish</a>
 </li>
@@ -223,269 +203,269 @@ typeof="schema:CreativeWork
  <a href="slides/course1920/EN.ASW.TE10_Business.pdf">English</a>,
  <a href="slides/course1920/ES.ASW.Te10_Negocio.pdf">Spanish</a>
  </li> -->
-</ul>
+            </ul>
 
-<h2 id="seminars">Seminars</h2>
+            <h2 id="seminars">Seminars</h2>
 
-<p>Seminar assignment Description:
-<a href="course2021/semAssignmentDescription.html">English</a>,
-<a href="course2021/semDescripcionEnunciado.html">Spanish</a></p>
+            <p>Seminar assignment Description:
+                <a href="course2021/semAssignmentDescription.html">English</a>,
+                <a href="course2021/semDescripcionEnunciado.html">Spanish</a></p>
 
-<p><a href="https://docs.google.com/document/d/1Y4JNRqMcHl76qczje-UhFUBR1RyQCZUXieQ8zem6Gus/edit?usp=sharing">Link to subjects</a></p>
+            <p><a href="https://docs.google.com/document/d/1Y4JNRqMcHl76qczje-UhFUBR1RyQCZUXieQ8zem6Gus/edit?usp=sharing">Link to subjects</a></p>
 
- <h3 id="seminarPresentations">Seminar presentations and posts made by students</h3>
- <table>
-   <tr>
-     <td>Subject</td>
-     <td>Seminar Es-1 (Spanish)</td>
-     <td>Seminar Es-2 (Spanish)</td>
-     <td>Seminar Es-3 (Spanish)</td>
-     <td>Seminar En (English)</td>
-     <td>Date</td>
-   </tr>
-   <tr>
-    <td>Architecture decision records</td>
-    <td>Team Es1-01 
-      <a href="slides/course2021/seminars/SemEs1-01.pdf">slides</a>
-       <br/>
-       <a href="slides/course2021/seminars/DocEs1-01.pdf">post</a>
-       <br/>
-       <a href="https://youtu.be/hNnBva6ahiw">video</a>
-     </td>
-    <td>
-      Team Es2-01 
-      <a href="slides/course2021/seminars/SemEs2-01.pdf">slides</a>
-      <br/>  
-      <a href="slides/course2021/seminars/DocEs2-01.pdf">post</a><br/>
-      <a href="https://youtu.be/FUdiyvvlyro">video</a>
-    </td>  
-    <td>Team Es3-01 
-      <a href="slides/course2021/seminars/SemEs3-01.pdf">slides</a>
-      <br/>
-      <a href="https://alvarojonathanadr.blogspot.com/2021/02/adr.html">post</a>
-      <br/>
-       <a href="https://youtu.be/NMA6hwvQY7c">video</a>
-    </td>
-    <td>Team En-01 
-      <a href="slides/course2021/seminars/SemEn-01.pdf">slides</a>
-      <br/>
-      <a href="slides/course2021/seminars/DocEn-01.pdf">post</a>
-      <br/>
-      <a href="https://youtu.be/rvFHHVjkeV8">video</a>
-    </td>  
-    <td>19-Feb-2021</td>
-  </tr>
-  <tr>
-    <td>Agile architecture</td>
-    <td>Team Es1-02 
-       <!--<a href="slides/course2021/seminars/SemEs1-02.pdf">slides</a>
+            <h3 id="seminarPresentations">Seminar presentations and posts made by students</h3>
+            <table>
+                <tr>
+                    <td>Subject</td>
+                    <td>Seminar Es-1 (Spanish)</td>
+                    <td>Seminar Es-2 (Spanish)</td>
+                    <td>Seminar Es-3 (Spanish)</td>
+                    <td>Seminar En (English)</td>
+                    <td>Date</td>
+                </tr>
+                <tr>
+                    <td>Architecture decision records</td>
+                    <td>Team Es1-01
+                        <a href="slides/course2021/seminars/SemEs1-01.pdf">slides</a>
+                        <br/>
+                        <a href="slides/course2021/seminars/DocEs1-01.pdf">post</a>
+                        <br/>
+                        <a href="https://youtu.be/hNnBva6ahiw">video</a>
+                    </td>
+                    <td>
+                        Team Es2-01
+                        <a href="slides/course2021/seminars/SemEs2-01.pdf">slides</a>
+                        <br/>
+                        <a href="slides/course2021/seminars/DocEs2-01.pdf">post</a><br/>
+                        <a href="https://youtu.be/FUdiyvvlyro">video</a>
+                    </td>
+                    <td>Team Es3-01
+                        <a href="slides/course2021/seminars/SemEs3-01.pdf">slides</a>
+                        <br/>
+                        <a href="https://alvarojonathanadr.blogspot.com/2021/02/adr.html">post</a>
+                        <br/>
+                        <a href="https://youtu.be/NMA6hwvQY7c">video</a>
+                    </td>
+                    <td>Team En-01
+                        <a href="slides/course2021/seminars/SemEn-01.pdf">slides</a>
+                        <br/>
+                        <a href="slides/course2021/seminars/DocEn-01.pdf">post</a>
+                        <br/>
+                        <a href="https://youtu.be/rvFHHVjkeV8">video</a>
+                    </td>
+                    <td>19-Feb-2021</td>
+                </tr>
+                <tr>
+                    <td>Agile architecture</td>
+                    <td>Team Es1-02
+                        <!--<a href="slides/course2021/seminars/SemEs1-02.pdf">slides</a>
        <br/> 
        <a href="">post</a>-->
-       <br/>
-       <a href="https://youtu.be/WFluJf7x1AI">video</a>
-    </td>
-    <td>Team Es2-02 
-      <a href="slides/course2021/seminars/SemEs2-02.pdf">slides</a>
-      <a href="slides/course2021/seminars/DocEs2-02.pdf">post</a>-->
-      <br/>
-      <a href="https://youtu.be/5W7ofdiR5dU">video</a>
-    </td>
-    <td>Team Es3-02 
-       <!--<a href="slides/course2021/seminars/SemEs3-02.pdf">slides</a>
-       <br/>
+                        <br/>
+                        <a href="https://youtu.be/WFluJf7x1AI">video</a>
+                    </td>
+                    <td>Team Es2-02
+                        <a href="slides/course2021/seminars/SemEs2-02.pdf">slides</a>
+                        <a href="slides/course2021/seminars/DocEs2-02.pdf">post</a>-->
+                        <br/>
+                        <a href="https://youtu.be/5W7ofdiR5dU">video</a>
+                    </td>
+                    <td>Team Es3-02
+                        <a href="slides/course2021/seminars/SemEs3-02.pdf">slides</a>
+                        <br/>
+                        <a href="slides/course2021/seminars/DocEs3-02.pdf">post</a>
+                        <br/>
+                        <a href="https://youtu.be/ndyKUNMjHa4">video</a>
+                    </td>
+                    <td>Team En-02
+                        <a href="slides/course2021/seminars/SemEn-02.pdf">slides</a>
+                        <br/>
+                        <a href="slides/course2021/seminars/DocEn-02.pdf">post</a>
+                        <br/>
+                        <a href="https://youtu.be/t7lnmtxt38A">video</a></td>
+                    <td>19-Feb-2021</td>
+                </tr>
+                <tr>
+                    <td>Continuous delivery</td>
+                    <td>Team Es1-03
+                        <!--<a href="slides/course2021/seminars/SemEs1-03.pdf">slides</a>
        <a href="">post</a>-->
-       <br/>
-       <a href="https://youtu.be/ndyKUNMjHa4">video</a>
-      </td>
-    <td>Team En-02 
-      <a href="slides/course2021/seminars/SemEn-02.pdf">slides</a>
-      <br/>  
-      <a href="slides/course2021/seminars/DocEn-02.pdf">post</a>
-      <br/>
-      <a href="https://youtu.be/t7lnmtxt38A">video</a></td>
-    <td>19-Feb-2021</td>
-  </tr>
-  <tr>
-    <td>Continuous delivery</td>
-    <td>Team Es1-03 
-       <!--<a href="slides/course2021/seminars/SemEs1-03.pdf">slides</a>
-       <a href="">post</a>-->
-    </td>
-    <td>Team Es2-03 
-      <!--<a href="slides/course2021/seminars/SemEs2-03.pdf">slides</a>
+                    </td>
+                    <td>Team Es2-03
+                        <!--<a href="slides/course2021/seminars/SemEs2-03.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>Team Es3-03 
-       <!--<a href="slides/course2021/seminars/SemEs3-03.pdf">slides</a>
+                    </td>
+                    <td>Team Es3-03
+                        <!--<a href="slides/course2021/seminars/SemEs3-03.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team En-03 
-      <!--<a href="slides/course2021/seminars/SemEn-03.pdf">slides</a>
+                    </td>
+                    <td>Team En-03
+                        <!--<a href="slides/course2021/seminars/SemEn-03.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>5-Mar-2021</td>
-  </tr>
-  <tr>
-    <td>Branching patterns</td>
-    <td>Team Es1-04 
-       <!--<a href="slides/course2021/seminars/SemEs1-04.pdf">slides</a>
+                    </td>
+                    <td>5-Mar-2021</td>
+                </tr>
+                <tr>
+                    <td>Branching patterns</td>
+                    <td>Team Es1-04
+                        <!--<a href="slides/course2021/seminars/SemEs1-04.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team Es2-04 
-      <!--<a href="slides/course2021/seminars/SemEs2-04.pdf">slides</a>
+                    </td>
+                    <td>Team Es2-04
+                        <!--<a href="slides/course2021/seminars/SemEs2-04.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>Team Es3-04 
-       <!--<a href="slides/course2021/seminars/SemEs3-04.pdf">slides</a>
+                    </td>
+                    <td>Team Es3-04
+                        <!--<a href="slides/course2021/seminars/SemEs3-04.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team En-04 
-      <!--<a href="slides/course2021/seminars/SemEn-04.pdf">slides</a>
+                    </td>
+                    <td>Team En-04
+                        <!--<a href="slides/course2021/seminars/SemEn-04.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>5-Mar-2021</td>
-  </tr>
-  <tr>
-    <td>Clean architecture</td>
-    <td>Team Es1-05 
-       <!--<a href="slides/course2021/seminars/SemEs1-05.pdf">slides</a>
+                    </td>
+                    <td>5-Mar-2021</td>
+                </tr>
+                <tr>
+                    <td>Clean architecture</td>
+                    <td>Team Es1-05
+                        <!--<a href="slides/course2021/seminars/SemEs1-05.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team Es2-05 
-      <!--<a href="slides/course2021/seminars/SemEs2-05.pdf">slides</a>
+                    </td>
+                    <td>Team Es2-05
+                        <!--<a href="slides/course2021/seminars/SemEs2-05.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>Team Es3-05 
-       <!--<a href="slides/course2021/seminars/SemEs3-05.pdf">slides</a>
+                    </td>
+                    <td>Team Es3-05
+                        <!--<a href="slides/course2021/seminars/SemEs3-05.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team En-05 
-      <!--<a href="slides/course2021/seminars/SemEn-05.pdf">slides</a>
+                    </td>
+                    <td>Team En-05
+                        <!--<a href="slides/course2021/seminars/SemEn-05.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>19-Mar-2021</td>
-  </tr>
-  <tr>
-    <td>Event sourcing</td>
-    <td>Team Es1-06 
-       <!--<a href="slides/course2021/seminars/SemEs1-06.pdf">slides</a>
+                    </td>
+                    <td>19-Mar-2021</td>
+                </tr>
+                <tr>
+                    <td>Event sourcing</td>
+                    <td>Team Es1-06
+                        <!--<a href="slides/course2021/seminars/SemEs1-06.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team Es2-06 
-      <!--<a href="slides/course2021/seminars/SemEs2-06.pdf">slides</a>
+                    </td>
+                    <td>Team Es2-06
+                        <!--<a href="slides/course2021/seminars/SemEs2-06.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>Team Es3-06 
-       <!--<a href="slides/course2021/seminars/SemEs3-06.pdf">slides</a>
+                    </td>
+                    <td>Team Es3-06
+                        <!--<a href="slides/course2021/seminars/SemEs3-06.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team En-06 
-      <!--<a href="slides/course2021/seminars/SemEn-06.pdf">slides</a>
+                    </td>
+                    <td>Team En-06
+                        <!--<a href="slides/course2021/seminars/SemEn-06.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>19-Mar-2021</td>
-  </tr>
-  <tr>
-    <td>Microservices trade-offs</td>
-    <td>Team Es1-07 
-       <!--<a href="slides/course2021/seminars/SemEs1-07.pdf">slides</a>
+                    </td>
+                    <td>19-Mar-2021</td>
+                </tr>
+                <tr>
+                    <td>Microservices trade-offs</td>
+                    <td>Team Es1-07
+                        <!--<a href="slides/course2021/seminars/SemEs1-07.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team Es2-07 
-      <!--<a href="slides/course2021/seminars/SemEs2-07.pdf">slides</a>
+                    </td>
+                    <td>Team Es2-07
+                        <!--<a href="slides/course2021/seminars/SemEs2-07.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>Team Es3-07 
-       <!--<a href="slides/course2021/seminars/SemEs3-07.pdf">slides</a>
+                    </td>
+                    <td>Team Es3-07
+                        <!--<a href="slides/course2021/seminars/SemEs3-07.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team En-07 
-      <!--<a href="slides/course2021/seminars/SemEn-07.pdf">slides</a>
+                    </td>
+                    <td>Team En-07
+                        <!--<a href="slides/course2021/seminars/SemEn-07.pdf">slides</a>
       <a href="">post</a></td>-->
-    </td>  
-    <td>9-Apr-2021</td>
-  </tr>
-  <tr>
-    <td>Circuit breaker</td>
-    <td>Team Es1-08 
-       <!--<a href="slides/course2021/seminars/SemEs1-08.pdf">slides</a>
+                    </td>
+                    <td>9-Apr-2021</td>
+                </tr>
+                <tr>
+                    <td>Circuit breaker</td>
+                    <td>Team Es1-08
+                        <!--<a href="slides/course2021/seminars/SemEs1-08.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team Es2-08 
-      <!--<a href="slides/course2021/seminars/SemEs2-08.pdf">slides</a>
+                    </td>
+                    <td>Team Es2-08
+                        <!--<a href="slides/course2021/seminars/SemEs2-08.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>Team Es3-08 
-       <!--<a href="slides/course2021/seminars/SemEs3-08.pdf">slides</a>
+                    </td>
+                    <td>Team Es3-08
+                        <!--<a href="slides/course2021/seminars/SemEs3-08.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team En-08 
-      <!--<a href="slides/course2021/seminars/SemEn-08.pdf">slides</a>
+                    </td>
+                    <td>Team En-08
+                        <!--<a href="slides/course2021/seminars/SemEn-08.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>9-Apr-2021</td>
-  </tr>
-  <tr>
-    <td>Chaos engineering</td>
-    <td>Team Es1-09 
-       <!--<a href="slides/course2021/seminars/SemEs1-09.pdf">slides</a>
+                    </td>
+                    <td>9-Apr-2021</td>
+                </tr>
+                <tr>
+                    <td>Chaos engineering</td>
+                    <td>Team Es1-09
+                        <!--<a href="slides/course2021/seminars/SemEs1-09.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team Es2-09 
-      <!--<a href="slides/course2021/seminars/SemEs2-09.pdf">slides</a>
+                    </td>
+                    <td>Team Es2-09
+                        <!--<a href="slides/course2021/seminars/SemEs2-09.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>Team Es3-09 
-       <!--<a href="slides/course2021/seminars/SemEs3-09.pdf">slides</a>
+                    </td>
+                    <td>Team Es3-09
+                        <!--<a href="slides/course2021/seminars/SemEs3-09.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team En-09 
-      <!--<a href="slides/course2021/seminars/SemEn-09.pdf">slides</a>
+                    </td>
+                    <td>Team En-09
+                        <!--<a href="slides/course2021/seminars/SemEn-09.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>23-Apr-2021</td>
-  </tr>
-  <tr>
-    <td>Serverless</td>
-    <td>
-      Team Es1-10 
-      <!-- <a href="slides/course2021/seminars/SemEs1-10.pdf">slides</a>
+                    </td>
+                    <td>23-Apr-2021</td>
+                </tr>
+                <tr>
+                    <td>Serverless</td>
+                    <td>
+                        Team Es1-10
+                        <!-- <a href="slides/course2021/seminars/SemEs1-10.pdf">slides</a>
        <a href="">post</a> -->
-    </td>
-    <td>
-      Team Es2-10 
-      <!--<a href="slides/course2021/seminars/SemEs2-10.pdf">slides</a>
+                    </td>
+                    <td>
+                        Team Es2-10
+                        <!--<a href="slides/course2021/seminars/SemEs2-10.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>Team Es3-10 
-       <!--<a href="slides/course2021/seminars/SemEs3-10.pdf">slides</a>
+                    </td>
+                    <td>Team Es3-10
+                        <!--<a href="slides/course2021/seminars/SemEs3-10.pdf">slides</a>
        <a href="">post</a>-->
-    </td>
-    <td>Team En-10 
-      <!--<a href="slides/course2021/seminars/SemEn-10.pdf">slides</a>
+                    </td>
+                    <td>Team En-10
+                        <!--<a href="slides/course2021/seminars/SemEn-10.pdf">slides</a>
       <a href="">post</a>-->
-    </td>  
-    <td>23-Apr-2021</td>
-  </tr>
-</table>
+                    </td>
+                    <td>23-Apr-2021</td>
+                </tr>
+            </table>
 
-<h3>Labs</h3>
- Lab Assignment Description:
- <a href="course2021/labAssignmentDescription.html">English</a>,
- <a href="course2021/labEnunciadoPractica.html">Spanish</a>
+            <h3>Labs</h3>
+            Lab Assignment Description:
+            <a href="course2021/labAssignmentDescription.html">English</a>,
+            <a href="course2021/labEnunciadoPractica.html">Spanish</a>
 
-<ul>
-<li>Day 1. Git and github:
-  <a href="slides/course2021/labs/EN.ASW.PL01_Github_2021.pdf">English</a>,
-  <a href="slides/course2021/labs/ES.ASW.PL01_Github_2021.pdf">Spanish</a></li>
-<li>Day 2. Documentation:
-    <a href="slides/course2021/labs/EN.ASW.PL02.pdf">English</a>,
-    <a href="slides/course2021/labs/ES.ASW.PL02_Documentacion.pdf">Spanish</a></li>
-<li>Day 3. Introduction to React and Solid:
-      <a href="slides/course2021/labs/EN.ASW.PL03.pdf">English</a>,
-      <a href="slides/course2021/labs/ES.ASW.PL03.pdf">Spanish</a></li>
-    
-<!--  
+            <ul>
+                <li>Day 1. Git and github:
+                    <a href="slides/course2021/labs/EN.ASW.PL01_Github_2021.pdf">English</a>,
+                    <a href="slides/course2021/labs/ES.ASW.PL01_Github_2021.pdf">Spanish</a></li>
+                <li>Day 2. Documentation:
+                    <a href="slides/course2021/labs/EN.ASW.PL02.pdf">English</a>,
+                    <a href="slides/course2021/labs/ES.ASW.PL02_Documentacion.pdf">Spanish</a></li>
+                <li>Day 3. Introduction to React and Solid:
+                    <a href="slides/course2021/labs/EN.ASW.PL03.pdf">English</a>,
+                    <a href="slides/course2021/labs/ES.ASW.PL03.pdf">Spanish</a></li>
+
+                <!--  
 <li>Day 2. Advanced github (branching, git flow, pull requests) and Arc42:
     <a href="slides/course1920/labs/EN.ASW.PL02.pdf">English</a>,
   <a href="slides/course1920/labs/ES.ASW.PL02_githubAvanzado.pdf">Spanish</a>
@@ -517,10 +497,10 @@ typeof="schema:CreativeWork
 
 <li>Day 13. Presentation day and final release
 -->
-</ul>
+            </ul>
 
 
-<!--
+            <!--
 <h2 id="StudentProjects">Student's projects</h2>
 
 <p>The following list contains the projects made by the students.
@@ -692,38 +672,39 @@ typeof="schema:CreativeWork
 </table>
 -->
 
-<h2>Links</h2>
+            <h2>Links</h2>
 
-<h3>Coding style guides</h3>
-<ul>
-<li><a href="https://github.com/i0natan/nodebestpractices">Node best practices</a>
-</ul>
+            <h3>Coding style guides</h3>
+            <ul>
+                <li><a href="https://github.com/i0natan/nodebestpractices">Node best practices</a>
+            </ul>
 
-<h3>Software architecture documentation</h3>
-<ul>
-<li><a href="http://arc42.org">Arc42</a></li>
-<li><a href="https://asciidoctor.org/">Asciidoctor</a></li>
-<li><a href="http://plantuml.com/">PlantUML</a></li>
-<li><a href="https://real-world-plantuml.com/">Real-world PlantUML</a></li>
-<li><a href="https://leanpub.com/arc42inpractice/read">Communicating Software Architectures</a>: lean, effective and painless documentation</li>
-</ul>
+            <h3>Software architecture documentation</h3>
+            <ul>
+                <li><a href="http://arc42.org">Arc42</a></li>
+                <li><a href="https://asciidoctor.org/">Asciidoctor</a></li>
+                <li><a href="http://plantuml.com/">PlantUML</a></li>
+                <li><a href="https://real-world-plantuml.com/">Real-world PlantUML</a></li>
+                <li><a href="https://leanpub.com/arc42inpractice/read">Communicating Software Architectures</a>: lean, effective and painless documentation</li>
+            </ul>
 
-<h3>Solid</h3>
-<ul>
-<li><a href="https://forum.solidproject.org/">Forum</a></li>
-<li>Awesome solid links:
-  <a href="https://github.com/kustomzone/awesome-solid">one</a>,
-  <a href="https://github.com/itsee/awesome-solid">two</a>
-</li>
-</ul>
+            <h3>Solid</h3>
+            <ul>
+                <li><a href="https://forum.solidproject.org/">Forum</a></li>
+                <li>Awesome solid links:
+                    <a href="https://github.com/kustomzone/awesome-solid">one</a>,
+                    <a href="https://github.com/itsee/awesome-solid">two</a>
+                </li>
+            </ul>
 
-<h3>Quality attributes</h3>
-<ul>
-<li><a href="ISO25010.html">ISO25010: Quality attributes MindMap</a></li>
-<li><a href="http://iso25000.com/index.php/en/iso-25000-standards/iso-25010">ISO 25010 Software product quality</a></li>
-</ul>
+            <h3>Quality attributes</h3>
+            <ul>
+                <li><a href="ISO25010.html">ISO25010: Quality attributes MindMap</a></li>
+                <li><a href="http://iso25000.com/index.php/en/iso-25000-standards/iso-25010">ISO 25010 Software product quality</a></li>
+            </ul>
 
-</article>
-</main>
+        </article>
+    </main>
 </body>
+
 </html>
