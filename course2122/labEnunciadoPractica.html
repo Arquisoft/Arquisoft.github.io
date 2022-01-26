@@ -37,17 +37,35 @@
 
 <section id="introduction">
 <h2>Introducción</h2>
-<p></p>
+<p>Una empresa de venta de productos quiere crear un sistema de venta online denominado <abbr title="Decentralized Delivery">DeDe</abbr> (Decentralized Delivery)
+    que respete la privacidad de los clientes siguiendo los <a href="https://solidproject.org/">principios SOLID</a>.
+<p>Para ello, el sistema no almacenará información personal de los clientes, 
+    sino que obtendrá dicha información de los pods de los usuarios siempre que 
+    los usuarios den los permisos necesarios al sistema de venta.</p>
 </section>      
 
 <section id="requirements"><h2>Requisitos de alto nivel</h2>
  <ul>
-     <li></li>
+     <li>El sistema emulará un sistema de compra online donde los usuarios finales podrán seleccionar y encargar productos a comprar</li>
+     <li>Una vez que el usuario seleccione los productos a comprar, el sistema calculará los costes de envío consultando la dirección deseada del usuario en su pod y calculando los costes de acuerdo a la distancia del centro de distribución a dicha dirección.</li>
+     <li>El sistema mostrará los costes finales de los productos a comprar y una vez que el usuario decida comprarlos, registrará el evento que simulará que la venta ya ha sido realizada y se procederá al envío correspondiente.</li>
+     <li>El sistema permitirá a los usuarios visualizar los pedidos realizados</li>
+     <li>La aplicación será implementada utilizando el <a href="https://reactjs.org/">framework React</a> y <a href="https://www.typescriptlang.org/">Typescript</a>.</li>
+     <li>La aplicación debería ser accesible y estar desplegada utilizando un sistema de integración continua. Cada equipo podrá decidir la tecnología de despliegue así como el servicio de hosting a utilizar.</li>
 </ul>
 
 </section><section id="OPTIONAL"><h2>Características opcionales</h2>
 <ul>
- <li></li>
+ <li>Permitir a un usuario tener más de una dirección de envío en sus pods.</li>
+ <li>Con el fin de calcular los costes de envío se podrán utilizar APIs externas de diferentes portadores, para que los usuarios puedan elegir con cuál de los portadores desean realizar el pedido. </li>
+ <li>Permitir que algunos usuarios con roles de administrador puedan ver estadísticas de productos solicitados y monitorizar el estado de los pedidos.</li>
+ <li>Implementar tanto una aplicación web como una aplicación en teléfono móvil.</li>
+ <li>Implementar un emulador del sistema de envío que pueda notificar a los usuarios cuando los productos hayan llegado y hacer un seguimiento del proceso de envío.</li>
+ <li>Soportar diferentes tipos de actores como clientes, gestores, administradores, etc. que puedan realizar diferentes acciones como gestión de inventario, cambios de precios, catalogación de ítems, etc. </li>
+ <li>Añadir la posibilidad de que existan varios centros de distribución o almacenes en los que estén almacenados los productos.</li>
+ <li>Añadir la posibilidad de que los usuarios puedan añadir o actualizar la información de sus direcciones en sus pods directamente mediante la aplicación.</li>
+ <li>Añadir puntuaciones y revisiones a los productos o los centros de distribución para que los usuarios puedan dar realimentación sobre su experiencia.</li>
+ <li>Los equipos podrán decidir utilizar más de una tecnología de despliegue si lo desean.</li>
 </ul>
 </section>
 
@@ -59,10 +77,11 @@
 <li>Seguridad y respeto a la privacidad de los usuarios</li>
 <li>Capacidad de respuesta de la aplicación</li>
 <li>Originalidad de la solución.</li>
-<li>Usabilidad de la documentación técnica teniendo en cuenta los registros de decisión arquitectónica</li>
-<li>Calidad del código analizada tanto manual como automáticamente.
-    Se tendrá en cuenta la cobertura de código en las pruebas así 
-    como la automatización de los procesos de despliegue y pruebas.</li>
+<li>Calidad de la documentación técnica teniendo en cuenta los registros de decisiones arquitectónicas.</li>
+<li>Calidad del código analizado tanto de forma manual como automática.</li>
+<li>Cobertura de código y calidad de la estrategia de pruebas.</li>
+<li>Aspectos de gestión de proyectos como el uso adecuado de issues, actas, revisiones de código, registros de decisiones arquitectónicas, etc.</li>
+<li>Sistema de Integración continua (CI) y Entrega Continua (CD). </li>
 </ul>
 </section>
 

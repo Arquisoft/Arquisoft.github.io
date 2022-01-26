@@ -37,18 +37,44 @@
 
 <section id="introduction">
 <h2>Introduction</h2>
-<p>
+<p>A privacy aware retail company wants to create an online retail system called <abbr title="Decentralized Delivery">DeDe</abbr> (Decentralized Delivery) 
+    that preserves the privacy of the customers following the <a href="https://solidproject.org/">SOLID principles</a>. </p>
+<p>In order to do that, the system will not store personal information from customers but 
+    will obtain that information from the user’s pods given that the users 
+    give the necessary permissions to the shopping system.</p>
 </p>
 </section>      
 
 <section id="requirements"><h2>High level requirements</h2>
  <ul>
- <li></li>
+ <li>The system will emulate an online shopping system where end-users can select and order products to buy.</li>
+ <li>Once a user selects the products to buy, the system will calculate the delivery costs by looking up 
+     the desired address of the end-users in their pods and calculating the costs according to the distance 
+     from the distribution center to that address.</li>
+  <li>The system will show the final costs of the products to buy and once the user decides to buy them, 
+      it will record the event simulating that the sale has been done and it can proceed with the delivery.</li>     
+  <li>The system will allow the users to visualize the orders done.</li>      
+  <li>The application will be implemented using the <a href="https://reactjs.org/">React framework</a> and <a href="https://www.typescriptlang.org/">Typescript</a>.</li>
+  <li>The application should be accessible and deployed using a continuous integration system. 
+      Each team can decide the deployment technology as well as the hosting service used.</li>
 </ul>
 
 </section><section id="OPTIONAL"><h2>Optional features</h2>
 <ul>
- <li></li>
+ <li>Allow a user to have more than one shipping address in their pods.</li>
+ <li>In order to calculate the delivery costs, external APIs from different carriers 
+     could be used and selected, so the users can compare and select the carrier.</li>
+ <li>The system can allow some users with administrative roles to visualize statistics 
+     about products ordered and monitor the state of orders.</li>    
+ <li>Implement both a web application and a mobile application.</li>     
+ <li>Implement an emulator of the delivery system which can notify the users when 
+     the products have arrived and keep track of the deliveries.</li>
+ <li>Support for different types of actors like customers, managers, administrators, etc. 
+     who can do different actions like inventory management, prices changes, items cataloging, etc.</li>    
+ <li>Add the possibility that there are several distribution centers or warehouses where the products are stored.</li>    
+ <li>Add the possibility that the users can add or update their address information to their pods directly from the app.</li>
+ <li>Add ratings and reviews to products or distribution centers so the users can provide feedback about their experience.</li>
+ <li>Teams can decide to use more than one deployment technology stack.</li>
 </ul>
 </section>
 
@@ -56,15 +82,15 @@
 <h2>Assessment criteria</h2>
 <p>The following criteria will be considered to assess the quality of the solution:</p>
 <ul>
-<li>Aesthetics and easy of use by non technical people</li>
-<li>Security and respect for user's privacy</li>
-<li>Responsiveness of the application</li>
-<li>Originality of the solution</li>
-<li>Usability of technical documentation taking into account architeture decision records.</li>
-<li>Code quality analized both manual and automatically. 
-    Code coverage during testing will be taken into account as well as 
-    automating of deployment and testing processes.
-</li>
+    <li>Aesthetics and easy to use by non technical people.</li>
+    <li>Security and respect for user's privacy.</li>
+    <li>Responsiveness of the application.</li>
+    <li>Originality of the solution.</li>
+    <li>Quality of technical documentation taking into account architecture decision records.</li>
+    <li>Code quality analyzed both manually and automatically.</li>
+    <li>Tests code coverage and quality of test strategy.</li>
+    <li>Project management aspects like proper use of issues, meeting notes, code reviews, architecture decision records, etc.</li>
+    <li>Continuous integration (CI) and continuous delivery (CD) systems.</li>
 </ul>
 </section>
 
