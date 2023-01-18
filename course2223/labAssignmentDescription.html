@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta charset="utf-8" />
+ <title>LoMap</title>
+ <link href="../styles/screen.css" media="screen" rel="stylesheet" />
+ <link href="../styles/print.css" media="print" rel="stylesheet" />
+ <meta content="width=device-width, initial-scale=1" name="viewport" />
+ <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+ <link href="https://dokie.li/media/css/do.css" media="all" rel="stylesheet" />
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" />
+ <script src="https://dokie.li/scripts/simplerdf.js"></script>
+ <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
+ <script src="https://dokie.li/scripts/medium-editor-tables.min.js"></script>
+ <script src="https://dokie.li/scripts/do.js"></script>
+</head>
+
+<body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ pimspace: http://www.w3.org/ns/pim/space# cc: https://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: http://schema.org/ void: http://rdfs.org/ns/void# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# bibo: http://purl.org/ontology/bibo/ sioc: http://rdfs.org/sioc/ns# doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# ldp: http://www.w3.org/ns/ldp# solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+ <main>
+ <article about="" typeof="schema:Article">
+  <dl id="document-modified">
+   <dt>Modified</dt><dd><time content="2022-01-24T05:48:56.986Z" datatype="xsd:dateTime" datetime="2022-01-24T05:48:56.986Z" property="schema:dateModified">2022-01-24</time></dd>
+  </dl>
+  <dl id="document-license">
+      <dt>License</dt>
+      <dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="schema:license" title="Creative Commons Zero">CC0 1.0</a></dd>
+ </dl>
+ <dl id="document-status">
+     <dt>Document Status</dt>
+     <dd prefix="pso: http://purl.org/spar/pso/" rel="pso:holdsStatusInTime" resource="#ad1d50ad-1147-41d9-a20d-9985c151b8bd"><span rel="pso:withStatus" resource="http://purl.org/spar/pso/draft" typeof="pso:PublicationStatus">Version 1.0</span></dd>
+ </dl>
+        
+<h1>LoMap</h1>
+<ul id="affiliations">
+  <li id="uniovi"><a href="http://arquisoft.github.io">Software architecture</a>, <a href="http://uniovi.es">University of Oviedo</a>, Spain </li>
+</ul>
+
+<section id="introduction">
+<h2>Introduction</h2>
+<p>A privacy aware retail company wants to create an online retail system called <abbr title="Decentralized Delivery">DeDe</abbr> (Decentralized Delivery) 
+    that preserves the privacy of the customers following the <a href="https://solidproject.org/">SOLID principles</a>. </p>
+<p>In order to do that, the system will not store personal information from customers but 
+    will obtain that information from the user’s pods given that the users 
+    give the necessary permissions to the shopping system.</p>
+</p>
+</section>      
+
+<section id="requirements"><h2>High level requirements</h2>
+ <ul>
+ <li>The system will emulate an online shopping system where end-users can select and order products to buy.</li>
+ <li>Once a user selects the products to buy, the system will calculate the delivery costs by looking up 
+     the desired address of the end-users in their pods and calculating the costs according to the distance 
+     from the distribution center to that address.</li>
+  <li>The system will show the final costs of the products to buy and once the user decides to buy them, 
+      it will record the event simulating that the sale has been done and it can proceed with the delivery.</li>     
+  <li>The system will allow the users to visualize the orders done.</li>      
+  <li>The application will be implemented using the <a href="https://reactjs.org/">React framework</a> and <a href="https://www.typescriptlang.org/">Typescript</a>.</li>
+  <li>The application should be accessible and deployed using a continuous integration system. 
+      Each team can decide the deployment technology as well as the hosting service used.</li>
+</ul>
+
+</section><section id="OPTIONAL"><h2>Optional features</h2>
+<ul>
+ <li>Allow a user to have more than one shipping address in their pods (e.g. Home, work, Gym, School etc.). 
+ <li>Add the possibility to include estimation of time people are at a location (e.g. Monday-Thursday work 09.00-18.00) 
+       and restrict some of the addresses to be used for delivery at some point in time.</li>
+ <li>Add pick-up locations that the delivery services can use. Based on the delivery address the pick-up location 
+      could be calculated (this can either be by one of the addresses in the profile or a pick-up location 
+      that's on the route of the receiver (e.g. between home and work).</li>       
+ <li>In order to calculate the delivery costs, external APIs from different carriers 
+     could be used and selected, so the users can compare and select the carrier.</li>
+ <li>The system can allow some users with administrative roles to visualize statistics 
+     about products ordered and monitor the state of orders.</li>    
+ <li>Implement both a web application and a mobile application.</li>     
+ <li>Implement an emulator of the delivery system which can notify the users when 
+     the products have arrived and keep track of the deliveries.</li>
+ <li>Support for different types of actors like customers, managers, administrators, etc. 
+     who can do different actions like inventory management, prices changes, items cataloging, etc.</li>    
+ <li>Add the possibility that there are several distribution centers or warehouses where the products are stored.</li>    
+ <li>Add the possibility that the users can add or update their address information to their pods directly from the app.</li>
+ <li>Add ratings and reviews to products or distribution centers so the users can provide feedback about their experience.</li>
+ <li>Teams can decide to use more than one deployment technology stack.</li>
+</ul>
+</section>
+
+<section id="assessment">
+<h2>Assessment criteria</h2>
+<p>The following criteria will be considered to assess the quality of the solution:</p>
+<ul>
+    <li>Aesthetics and easy to use by non technical people.</li>
+    <li>Security and respect for user's privacy.</li>
+    <li>Responsiveness of the application.</li>
+    <li>Originality of the solution.</li>
+    <li>Quality of technical documentation taking into account architecture decision records.</li>
+    <li>Code quality analyzed both manually and automatically.</li>
+    <li>Tests code coverage and quality of test strategy.</li>
+    <li>Project management aspects like proper use of issues, meeting notes, code reviews, architecture decision records, etc.</li>
+    <li>Continuous integration (CI) and continuous delivery (CD) systems.</li>
+</ul>
+</section>
+
+<section id="challenge">
+<h2>Solid challenge</h2>
+
+The teams can voluntarily to participate in the SOLID challenge, which has been organized in collaboration with 
+<a href="https://inrupt.com/">Inrupt</a> and <a href="https://www.empathy.co/">Empathy</a>. 
+Further information will be published about how to participate. 
+</section>
+</article>
+</main>
+</body>
+</html>
