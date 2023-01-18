@@ -19,7 +19,7 @@
  <main>
  <article about="" typeof="schema:Article">
   <dl id="document-modified">
-   <dt>Modified</dt><dd><time content="2022-01-24T05:48:56.986Z" datatype="xsd:dateTime" datetime="2022-01-24T05:48:56.986Z" property="schema:dateModified">2022-01-24</time></dd>
+   <dt>Modified</dt><dd><time content="2023-01-18T05:48:56.986Z" datatype="xsd:dateTime" datetime="2023-01-18T05:48:56.986Z" property="schema:dateModified">2023-01-18</time></dd>
   </dl>
   <dl id="document-license">
       <dt>License</dt>
@@ -37,26 +37,24 @@
 
 <section id="introduction">
 <h2>Introduction</h2>
-<p>A privacy aware retail company wants to create an online retail system called <abbr title="Decentralized Delivery">DeDe</abbr> (Decentralized Delivery) 
-    that preserves the privacy of the customers following the <a href="https://solidproject.org/">SOLID principles</a>. </p>
-<p>In order to do that, the system will not store personal information from customers but 
-    will obtain that information from the user’s pods given that the users 
-    give the necessary permissions to the shopping system.</p>
-</p>
+<p>The software development company HappySw has been hired by the Council of Brussels to develop a software system called LoMap where the citizens can have personalized maps about places and local businesses in their city.</p>
+<p>Places that can be mapped can vary from shops to bars, restaurants, sights, culture, etc. 
+    The personalized maps will be under full control of the users and the shared information will be stored in a personal pod according to the <a href="https://solidproject.org/">SOLID project</a>.</p> 
+<p>Although the company has been hired by the council of one specific city, one of their goals is to develop a generic software solution that can be deployed and used in other cities.</p>
+<p>Initial focus is on the user, to allow them to create their personal map of the places they live.</p>
+<p>Next step could be to allow places (e.g. shops, restaurants etc) to create their own space, like a digital version of their physical place. </p>
 </section>      
 
 <section id="requirements"><h2>High level requirements</h2>
  <ul>
- <li>The system will emulate an online shopping system where end-users can select and order products to buy.</li>
- <li>Once a user selects the products to buy, the system will calculate the delivery costs by looking up 
-     the desired address of the end-users in their pods and calculating the costs according to the distance 
-     from the distribution center to that address.</li>
-  <li>The system will show the final costs of the products to buy and once the user decides to buy them, 
-      it will record the event simulating that the sale has been done and it can proceed with the delivery.</li>     
-  <li>The system will allow the users to visualize the orders done.</li>      
-  <li>The application will be implemented using the <a href="https://reactjs.org/">React framework</a> and <a href="https://www.typescriptlang.org/">Typescript</a>.</li>
-  <li>The application should be accessible and deployed using a continuous integration system. 
-      Each team can decide the deployment technology as well as the hosting service used.</li>
+ <li>Users can add locations in different categories like: shops, bars, restaurants, sights, monuments, etc.</li>
+ <li>Users will be able to show the locations in a map window</li>
+  <li>Users can add review scores, comments, pictures, etc. about the added places.</li>     
+  <li>It will be possible to manage from the application the information that is accessible with other users, like their friends or groups of friends.</li>      
+  <li>The information about a place stored by each user should not be centralized and should be stored in each user’s pod. </li>
+  <li>If it is considered necessary, the system could store other information in a centralized way for performance reasons trying to respect the privacy of the users as much as possible.</li>
+  <li>The system will allow users to see places and information about those places taken from their friends. </li>
+  <li>The system will allow users to see the map with filters like by category, friends, etc.</li>
 </ul>
 
 </section><section id="OPTIONAL"><h2>Optional features</h2>
