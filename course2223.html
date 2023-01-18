@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8" />
+<title>Software architecture Course 22-23</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+<link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+<script src="https://dokie.li/scripts/dokieli.js"></script>
+</head>
+
+<body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ owl: http://www.w3.org/2002/07/owl# 
+ xsd: http://www.w3.org/2001/XMLSchema# 
+ dcterms: http://purl.org/dc/terms/ 
+ dctypes: http://purl.org/dc/dcmitype/ 
+ foaf: http://xmlns.com/foaf/0.1/ 
+ pimspace: http://www.w3.org/ns/pim/space# 
+ cc: https://creativecommons.org/ns# 
+ skos: http://www.w3.org/2004/02/skos/core# 
+ prov: http://www.w3.org/ns/prov# 
+ qb: http://purl.org/linked-data/cube# 
+ schema: http://schema.org/ 
+ void: http://rdfs.org/ns/void# 
+ rsa: http://www.w3.org/ns/auth/rsa# 
+ cert: http://www.w3.org/ns/auth/cert# 
+ wgs: http://www.w3.org/2003/01/geo/wgs84_pos# 
+ bibo: http://purl.org/ontology/bibo/ 
+ sioc: http://rdfs.org/sioc/ns# 
+ doap: http://usefulinc.com/ns/doap# 
+ dbr: http://dbpedia.org/resource/ 
+ dbp: http://dbpedia.org/property/ 
+ sio: http://semanticscience.org/resource/ 
+ opmw: http://www.opmw.org/ontology/ 
+ deo: http://purl.org/spar/deo/ 
+ doco: http://purl.org/spar/doco/ 
+ cito: http://purl.org/spar/cito/ 
+ fabio: http://purl.org/spar/fabio/ 
+ oa: http://www.w3.org/ns/oa# 
+ as: https://www.w3.org/ns/activitystreams# 
+ ldp: http://www.w3.org/ns/ldp# 
+ solid: http://www.w3.org/ns/solid/terms# 
+ acl: http://www.w3.org/ns/auth/acl# 
+ dio: https://w3id.org/dio#" typeof="schema:CreativeWork 
+ sioc:Post 
+ prov:Entity">
+
+
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="http://arquisoft.github.io" title="Home page">Home</a></li>
+                    <li><a href="#lectureNodes" title="Go to lecture notes">Lecture notes</a></li>
+                    <li><a href="#seminars" title="Seminars info">Seminars</a></li>
+                    <li><a href="#labs" title="Labs">Labs</a></li>
+                    <li><a href="https://arquisoft.github.io/#Conferences" title="Conferences">Conferences</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article about="" typeof="schema:Article">
+            <h1>Software Architecture Course - 2022-23 edition</h1>
+            <div id="authors">
+                <ul>
+                    <li><a href="http://labra.weso.es/" about="http://labra.weso.es#me" property="schema:name"
+                            typeof="http://xmlns.com/foaf/0.1/Person">Jose Emilio Labra Gayo</a></li>
+                    <li><a href="https://pglez82.github.io/" about="https://pglez82.github.io/" property="schema:name"
+                            typeof="http://xmlns.com/foaf/0.1/Person">Pablo González</a></li>
+                    <li><a href="https://www.linkedin.com/in/irene-cid-81158148/"
+                            about="https://www.linkedin.com/in/irene-cid-81158148/" property="schema:name"
+                            typeof="http://xmlns.com/foaf/0.1/Person">Irene Cid Rico</a></li>
+                    <li><a href="https://www.linkedin.com/in/augustocristian/"
+                            property="schema:name" typeof="http://xmlns.com/foaf/0.1/Person">Cristian Augusto Alonso</a></li>
+                </ul>
+
+                <ul id="affiliations">
+                    <li id="uniovi">
+                        <a about="http://www.wikidata.org/entity/Q2303432" rel="schema:url" typeof="schema:Organization"
+                            property="schema:name" href="http://uniovi.es">University of Oviedo, Spain</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 id="lectureNotes">Lecture notes material</h2>
+            <p>The video material has been copied from course 2020-21 when it was recorded</p>
+
+            <ul>
+                <a href="course2021/Contents.pdf">Summary of the contents in a single PDF file</a>
+                <a href="https://www.goodreads.com/list/show/160472.Software_architecture">Recommended books about
+                    Software architecture</a>
+            </ul>
+
+            <table border="1">
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Slides</th>
+                    <th>Video (English)</th>
+                    <th>Video (Spanish)</th>
+                </tr>
+                <tr>
+                    <td><time datetime="2022-01-26">26/Jan/2022</time></td>
+                    <td>Presentation</td>
+                    <td>
+                        <a href="slides/course2122/EN.ASW.TE01_Presentation.pdf">English</a>,
+                        <a href="slides/course2122/ES.ASW.TE01_Presentacion.pdf">Spanish</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><time datetime="2022-02-02">02/Feb/2022</time></td>
+                    <td>What is software architecture</td>
+                    <td><a href="slides/course2021/EN.ASW.TE02_Definitions.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te02_Definiciones.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/LvYFkgUjp7k">English (Part 1)</a>
+                        <a href="https://youtu.be/V4CKgNpGgGU">English (Part 2)</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/YvikY9oLYbg">Spanish (Part 1)</a>
+                        <a href="https://youtu.be/5u32UNGJ1B8">Spanish (Part 2)</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Communicating software architecture</td>
+                    <td><a href="slides/course2021/EN.ASW.TE03_Documentation.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te03_Documentacion.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/OFilk-NnWoM">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/zVyCMwkJ0PQ">Spanish</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><time datetime="2022-02-09">09/Feb/2022</time></td>
+                    <td>Role of software architect and stakeholders</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE04_Rol_SoftwareArchitect.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te04_RolArquitectoSoftware.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/5lI9FAXjPPM">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/U61UZdy4fvE">Spanish</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Quality attributes</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE05_QualityAttributes.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te05_AtributosCalidad.pdf">Spanish</a></li>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/feodAUeGn0c">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/U1Vpk7TUj58">Spanish</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3"><time datetime="2022-02-16">16/Feb/2022</time></td>
+                    <td>Achieving software architecture</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE06_AchievingSoftwareArchitecture.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te06_AlcanzandoArquitecturaSoftware.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/rQGOSabg_aE">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/xnsPuPodZvk">Spanish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Software architecture techniques</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE07_ArchitectureTechniques.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te07_TecnicasArquitectura.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/ReCwBLmFL58">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/zYwYPIVer-M">Spanish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Software architecture taxonomies: Building</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE08_Construction.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te08_Construccion.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/Hbqo3FpkqIk">English (part 1)</a>
+
+                        <a href="https://youtu.be/vYzh_1wwtwc">English (part 2)</a>
+                        <!-- https://web.microsoftstream.com/video/c48cd870-4041-45f2-b410-a4903e77e151 -->
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/Z7RQh79Jv24">Spanish (part 1)</a>
+
+                        <a href="https://youtu.be/tjhqEdKrGCA">Spanish (part 2)</a>
+                        <!-- https://web.microsoftstream.com/video/f00d3600-ce58-4d57-b794-3359e57e2ea3 -->
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><time datetime="2022-02-23">23/Feb/2022</time></td>
+                    <td>Software architecture taxonomies: Modularity</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE09_Modularity.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te09_Modularidad.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/YbKLqfk7TQg">English (Part 1)</a>
+                        <!-- https://web.microsoftstream.com/video/36def84f-6f29-4295-a496-343266fb7dce -->
+
+                        <!-- https://web.microsoftstream.com/video/9bdf7566-6514-43f4-8d3b-adbbffd3e62b -->
+                        <a href="https://youtu.be/QlQQ3WPfakI">English (Part 2)</a>
+
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/Zokdw-fh0DM">Spanish (Part 1)</a>
+                        <!-- https://web.microsoftstream.com/video/bd21c2f0-54ad-4702-afd0-4c12b964bf3f -->
+
+                        <!-- https://web.microsoftstream.com/video/3f85dec2-bffa-4e4e-8204-3075edb52d36 -->
+                        <a href="https://youtu.be/CWkGDyUzlYE">Spanish (Part 2</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><time datetime="2022-03-02">02/Mar/2022</time></td>
+                    <td>Software architecture taxonomies: Behaviour at runtime (Components and connectors), monolith
+                    </td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE10_Monolithic.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te10_Comportamiento_Monolito.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <!-- https://web.microsoftstream.com/video/6e6eb7ca-68c6-40f4-b1ca-818ff6c2d163 -->
+                        <a href="https://youtu.be/eeoXTScwppA">English (Part 1)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/0409823a-451b-4a8b-ad90-d6a870c07ddc -->
+                        <a href="https://youtu.be/dqSIHhT6qog">English (Part 2)</a>
+
+                        <!-- https://web.microsoftstream.com/video/b861db8a-d084-462d-aa97-f7265a7554d6 -->
+                        <a href="https://youtu.be/JtIuNVG5Q6E">English (Part 3)</a>
+
+                        <!-- https://web.microsoftstream.com/video/f6c5e39a-30b0-4950-8d33-a5f2423cdcfb -->
+                        <a href="https://youtu.be/iy649JYsKUQ">English (Part 4)</a>
+                    </td>
+                    <td>
+
+                        <!-- https://web.microsoftstream.com/video/00c74db4-b9d8-40bc-b936-a9e54fbe462c -->
+                        <a href="https://youtu.be/HXT1p4O9sQ8">Spanish (Part 1)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/e6a3dcb8-0501-4bf2-bc6f-18959b14600e -->
+                        <a href="https://youtu.be/_FBDZ7XX6Lc">Spanish (Part 2)</a>,
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><time datetime="2022-03-09">09/Mar/2022</time></td>
+                    <td>Software architecture taxonomies: Behaviour at runtime (Components and connectors), distributed
+                        and big scale systems</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE11_DistributedBigDataSystems.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te11_DistribuidosBigData.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <!-- https://web.microsoftstream.com/video/eab65aba-15cf-4e34-806a-12dde72fc9b7 -->
+                        <a href="https://youtu.be/hl2_Phw-fEs">English (Part 1)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/ac5911d0-a9d5-4feb-8e17-3619db1a7477 -->
+                        <a href="https://youtu.be/3-aQ6GIg3wg">English (Part 2)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/4d0612c5-f257-4823-ba44-f24ed5b290c5 -->
+                        <a href="https://youtu.be/G9x5Qsdlasw">English (Part 3)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/1844d5d9-0837-41a1-82c5-52d1866893d1 -->
+                        <a href="https://youtu.be/q3bltJk4KOY">English (Part 4)</a><br />
+
+                    </td>
+                    <td>
+
+                        <!-- https://web.microsoftstream.com/video/09485303-45f0-4f63-9230-cd9f402562fb -->
+                        <a href="https://youtu.be/bY6gm6hZLcw">Spanish (Part 1)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/f9600cc0-22b8-4cd0-9252-11ab6f7b0c35  -->
+                        <a href="https://youtu.be/2mZAlBkU0N4">Spanish (Part 2)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/957d5162-b2b1-44c5-a84c-2fb77e686719  -->
+                        <a href="https://youtu.be/haN-1r7-fww">Spanish (Part 3)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/dca57f36-5583-4e4f-8538-ad778fd6d642 -->
+                        <a href="https://youtu.be/PYtJtdCAmrE">Spanish (Part 4)</a><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td><time datetime="2022-03-30">16/Mar/2022</time></td>
+                    <td>Conference: Avoiding cosplaying when designing software<br /><a
+                            href="https://www.linkedin.com/in/pablobermejo/">Pablo Bermejo García</a>, Distinguised
+                        Software Architect<br /><a href="https://dxc.com/">DXC Technology</a></td>
+                    <td><a href="slides/Conferences/2022_Cosplaying_PabloBermejo.pdf">Slides</a></td>
+                    <td><a href="https://www.youtube.com/watch?v=PJX1k0fAX4w">English</a></td>
+                    <td><a href="https://www.youtube.com/watch?v=gQKn2CpMJ80">Spanish</a></td>
+                </tr>
+
+                <tr>
+                    <td><time datetime="2022-03-16">23/Mar/2022</time></td>
+                    <td>Software architecture taxonomies: Allocation</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE12_Allocation.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te12_Disposicion.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <!-- https://web.microsoftstream.com/video/f9d7e93e-e952-4237-938c-0891a0c0c044 -->
+                        <a href="https://youtu.be/RDwZiqDejsw">English (Part 1)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/1259b693-f42b-49b7-83fd-087c8e7c8462 -->
+                        <a href="https://youtu.be/UDrZjZyCIdk">English (Part 2)</a><br />
+
+                    </td>
+                    <td>
+
+                        <!-- https://web.microsoftstream.com/video/47e71d86-1a3a-458d-99fe-4de9257c72b0 -->
+                        <a href="https://youtu.be/yhDMehwzG6k">Spanish (Part 1)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/247e0f07-a9d0-489f-9cc1-7a45bfd1f594  -->
+                        <a href="https://youtu.be/Yb-_wORIEiE">Spanish (Part 2)</a><br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><time datetime="2022-03-23">30/Mar/2022</time></td>
+                    <td>Software architecture taxonomies: Enterprise software architecture</td>
+                    <td>
+                        <a href="slides/course2021/EN.ASW.TE13_EnterpriseSoftware.pdf">English</a>,
+                        <a href="slides/course2021/ES.ASW.Te13_Empresarial.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <!-- https://web.microsoftstream.com/video/b94a529e-c88c-4556-97eb-7d0be1cebd8d -->
+                        <a href="https://youtu.be/bYg2pjC25Zk">English</a><br />
+                    </td>
+                    <td>
+
+                        <!-- https://web.microsoftstream.com/video/2671115a-d609-458f-99e5-83819cbeddb9 -->
+                        <a href="https://youtu.be/WOTYjy6zcKg">Spanish</a><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td><time datetime="2022-04-06">06/Apr/2022</time></td>
+                    <td>Conference: Microservices<br />
+                        <a href="https://www.linkedin.com/in/david-rico-fern%C3%A1ndez-573233a/">David Rico</a>, Manager
+                        Industry Asturias NTT DATA, <a href="https://www.nttdata.com/">NTT Data</a> <br />
+                        Eduardo Priego, Tech Lead, <a href="https://www.nttdata.com/">NTT Data</a><br />
+                        <a href="https://www.linkedin.com/in/mario-olea-perez-b87275145/">Mario Olea</a>, Tech Lead, <a
+                            href="https://www.nttdata.com/">NTT Data</a> <br />
+                    <td>
+                        <a href="slides/Conferences/2022_Microservices_Uniovi.pdf">Spanish</a>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+            </table>
+
+            <h2 id="seminars">Seminars</h2>
+
+<!--            <p>Seminar assignment Description:
+                <a href="course2021/semAssignmentDescription.html">English</a>,
+                <a href="course2021/semDescripcionEnunciado.html">Spanish</a>
+            </p>
+
+            <p><a
+                    href="https://docs.google.com/document/d/1mRtMJHxM_TAMhHX0-sHwZAb5rTMH8hUQpHogys1dH_E/edit?usp=sharing">Link
+                    to subjects</a></p>
+
+
+
+            <h3 id="seminarPresentations">Seminar presentations and posts made by students</h3>
+            <table>
+                <tr>
+                    <td>Subject</td>
+                    <td>Seminar Es-1 (Spanish)</td>
+                    <td>Seminar Es-2 (Spanish)</td>
+                    <td>Seminar Es-3 (Spanish)</td>
+                    <td>Seminar En (English)</td>
+                </tr>
+                <tr>
+                    <td>
+                        Code Reviews
+                    </td>
+                    <td>Team Es1-01
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs1-01.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-01.pdf">post</a>
+                        <br />
+                    </td>
+                    <td>
+                        Team Es2-01
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs2-01.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs2-01.pdf">post</a><br />
+                    </td>
+                    <td>
+                        Team Es3-01
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs3-01.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs3-01.pdf">post</a>
+                    </td>
+                    <td>Team En-01
+                        <br />
+                        <a href="slides/course2122/seminars/SemEn-01.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEn-01.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Technical Debt</td>
+                    <td>Team Es1-02
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs1-02.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-02.pdf">post</a>
+                    </td>
+                    <td>Team Es2-02
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs2-02.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs2-02.pdf">post</a>
+                    </td>
+                    <td>Team Es3-02
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs3-02.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs3-02.pdf">post</a>
+                    </td>
+                    <td>Team En-02
+                        <br />
+                        <a href="slides/course2122/seminars/SemEn-02.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEn-02.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CUPID vs SOLID</td>
+                    <td>Team Es1-03<br />
+                        <a href="slides/course2122/seminars/SemEs1-03.pdf">slides</a><br />
+                        <a href="slides/course2122/seminars/DocEs1-03.pdf">post</a>
+                    </td>
+                    <td> Team Es2-03
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs2-03.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs2-03.pdf">post</a>
+                    </td>
+                    <td>Team Es3-03
+                        <br />
+                        <a href="slides/course2122/seminars/PresentacionS3G3.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/TrabajoS3G3.pdf">post</a>
+                    </td>
+                    <td>Team En-03
+                        <br />
+                        <a href="slides/course2122/seminars/SemEn-03.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEn-03.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Infrastructure as code</td>
+                    <td>Team Es1-04
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs1-04.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-04.pdf">post</a>
+                    </td>
+                    <td>Team Es2-04
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs2-04.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs2-04.pdf">post</a>
+                    </td>
+                    <td>Team Es3-04
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs3-04.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs3-04.pdf">post</a>
+                    </td>
+                    <td>Team En-04
+                        <br/>
+                        <a href="slides/course2122/seminars/SemEn-04.pdf">slides</a>
+                        <br/>
+                        <a href="slides/course2122/seminars/DocEn-04.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Behavioural code analysis</td>
+                    <td>Team Es1-05
+                        <br>
+                        <a href="slides/course2122/seminars/SemEs1-05.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-05.pdf">post</a>
+                    </td>
+
+                    <td>Team Es2-05
+                        <br>
+                        <a href="slides/course2122/seminars/SemES2-05.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocES2-05.pdf">post</a>
+                    </td>
+                    <td>Team Es3-05
+                        <br />
+                        <a href="slides/course2122/seminars/SemES3-05.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs3-05.pdf">post</a>
+                    </td>
+
+                    <td>Team En-05
+                        <br />
+                        <a href="slides/course2122/seminars/SemEn-05.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEn-05.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lehman's laws</td>
+                    <td>Team Es1-06
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs1-06.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-06.pdf">post</a>
+                    </td>
+                    <td>Team Es2-06
+                        <br />
+                        <a href="slides/course2122/seminars/SemES2-06.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocES2-06.pdf">post</a>
+                    </td>
+                    <td>Team Es3-06
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs3-06.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs3-06.pdf">post</a>
+                    </td>
+                    <td>Team En-06
+                        <br />
+                        <a href="slides/course2122/seminars/SemEn-06.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEN-06.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Micro-frontends</td>
+                    <td>Team Es1-07
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs1-07.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-07.pdf">post</a>
+                    </td>
+                    <td>Team Es2-07
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs2-07.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs2-07.pdf">post</a>
+                    </td>
+                    <td>Team Es3-07
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs3-07.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/Doc-Es3-07.pdf">post</a>
+                    </td>
+                    <td>Team En-07
+                        <br />
+                        <a href="slides/course2122/seminars/SemEn-07.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEn-07.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Serverless trade-offs</td>
+                    <td>Team Es1-08
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs1-08.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-08.pdf">post</a>
+                    </td>
+                    <td>Team Es2-08 <br />
+                        <a href="slides/course2122/seminars/SemES2-08.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocES2-08.pdf">post</a>
+                    </td>
+
+                    <td>Team Es3-08
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs3-08.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs3-08.pdf">post</a>
+                    </td>
+                    <td>Team En-08
+                        <br />
+                        <a href="slides/course2122/seminars/SemEn-08.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEn-08.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Four key metrics</td>
+                    <td>Team Es1-09
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs1-09.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-09.pdf">post</a>
+                    </td>
+                    <td>Team Es2-09
+                        <br />
+                        <a href="course2122/seminars/SemEs2-09.pdf">slides</a>
+                        <br />
+                        <a href="course2122/seminars/DocEs2-09.pdf">post</a>
+                    </td>
+                    <td>Team Es3-09
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs3-09.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs3-09.pdf">post</a>
+                    </td>
+
+                    <td>Team En-09
+                        <br />
+                        <a href="slides/course2122/seminars/SemEn-09.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEn-09.pdf">post</a>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Web3 and NFT</td>
+                    <td>Team Es1-10
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs1-10.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs1-10.pdf">post</a>
+                    </td>
+                    <td>Team Es2-10
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs2-10.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs2-10.pdf">post</a>
+                    </td>
+                    <td>Team Es3-10
+                        <br />
+                        <a href="slides/course2122/seminars/SemEs3-10.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2122/seminars/DocEs3-10.pdf">post</a>
+                    </td>
+                    <td>Team En-10
+                        <br>
+                        <a href="slides/course2122/seminars/SemEn-10.pdf">slides</a>
+                        <br>
+                        <a href="slides/course2122/seminars/DocEn-10.pdf">post</a>
+                    </td>
+                </tr>
+            </table>
+        -->
+            <h2 id="labs">Labs</h3>
+                Lab Assignment Description:
+                <a href="course2122/labAssignmentDescription.html">English</a>,
+                <a href="course2122/labEnunciadoPractica.html">Spanish</a>
+
+                <ul>
+                    <li>Week 1. Git and github:
+                        <a href="slides/course2122/labs/EN.ASW.PL01_Github_2022.pdf">English</a>,
+                        <a href="slides/course2122/labs/ES.ASW.PL01_Github_2022.pdf">Spanish</a>
+                    </li>
+                    <li>Week 2. Documentation:
+                        <a href="slides/course2122/labs/EN.ASW.PL02.pdf">English</a>,
+                        <a href="slides/course2122/labs/ES.ASW.PL02_Documentacion.pdf">Spanish</a>
+                    </li>
+                    <li>Week 3. Introduction to React and Solid:
+                        <a href="slides/course2122/labs/EN.ASW.PL03.pdf">English</a>,
+                        <a href="slides/course2122/labs/ES.ASW.PL03.pdf">Spanish</a>
+                    </li>
+                    <li>Week 4. Review of 1st deliverable: first draft of technical documentation</li>
+                    <li>Week 5. Building automation and dependency management:
+                        <a href="slides/course2122/labs/EN.ASW.PL05.pdf">English</a>,
+                        <a href="slides/course2122/labs/ES.ASW.PL05.pdf">Spanish</a>
+                    </li>
+                    <li>Week 6. Distribution and deployment:
+                        <a href="slides/course2122/labs/EN.ASW.PL06.pdf">English</a>,
+                        <a href="slides/course2122/labs/ES.ASW.PL06.pdf">Spanish</a>
+
+                    </li>
+                    <li>Week 7: Review of 2nd deliverable: 1st prototype</li>
+                    <li>Week 8. Test-driven-development and continuous integration:
+                        <a href="slides/course2122/labs/EN.ASW.PL08.pdf">English</a>,
+                        <a href="slides/course2122/labs/ES.ASW.PL08.pdf">Spanish</a>
+                    </li>
+
+                    <li>Week 9. Acceptance tests:
+                        <a href="slides/course2122/labs/EN.ASW.PL09.pdf">English</a>,
+                        <a href="slides/course2122/labs/ES.ASW.PL09.pdf">Spanish</a>
+                    </li>
+
+                    <li>Day 10. Review of 3rd deliverable: 1st release with Documentation + prototype synchronized</li>
+
+                    <li>Day 11. Load tests and other tests:
+                        <a href="slides/course2122/labs/EN.ASW.PL11.pdf">English</a>,
+                        <a href="slides/course2122/labs/ES.ASW.PL11_PruebasCarga.pdf">Spanish</a>
+                    </li>
+
+                    <li>Day 12. Monitoring/Profiling
+                        <a href="slides/course2021/labs/EN.ASW.PL12.pdf">English</a>,
+                        <a href="slides/course2021/labs/ES.ASW.PL12_MonitorizacionProfiling.pdf">Spanish</a>
+                    </li>
+
+<!--
+<h2 id="SolidChallenge">Solid Challenge 2023</h2>          
+<p>The following table contains the student's projects that participate in the Solid Challenge</p>
+<table>
+    <tr>
+        <td>Team</td>
+        <td>App</td>
+        <td>Source code</td>
+        <td>Docs</td>
+        <td>Promotional Video<br/>For Solid challenge</td>
+    </tr>
+  <tr>
+   <td>Dede_en3a</td>
+   <td><a href="https://dedeen3a.web.app/home">Web app</a><br/><a href="https://mega.nz/file/28I2HLKC#WoMFdKjjS2nA2iQHXL2Uj2EdN7AylpN24FXrKCRijdg">Mobile app</a></td>
+   <td><a href="https://github.com/Arquisoft/dede_en3a">Repo</a></td>
+   <td><a href="https://arquisoft.github.io/dede_en3a/">Technical documentation</a></td>
+   <td><a href="https://www.youtube.com/watch?v=LuPgXP_fWKk">Promotional video</a></td>
+  </tr>
+  <tr>
+   <td>Dede_en2a</td>
+   <td><a href="https://www.dedeen2a.tk/">Web app</a></td>
+   <td><a href="https://github.com/Arquisoft/dede_en2a">Repo</a></td>
+   <td><a href="https://arquisoft.github.io/dede_en2a/">Technical documentation</a></td>
+   <td><a href="https://www.youtube.com/watch?v=4LG93JEGACs">Promotional video</a></td>
+  </tr>
+</table> 
+-->
+
+<!-- <h2 id="StudentProjects">All student's projects</h2>
+
+  <p>The following list contains the projects made by the students.
+
+                <table>
+                    <tr>
+                        <td>Team</td>
+                        <td>App</td>
+                        <td>Source code</td>
+                        <td>Docs</td>
+                        <td>Presentation</td>
+                    </tr>
+                    <tr>
+                        <td>Dede_en1a</td>
+                        <td><a href="https://webapp.dededeals.es/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_en1a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_en1a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dede_en1b</td>
+                        <td><a href="https://www.dedeen1b.tk/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_en1b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_en1b/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dede_en2a</td>
+                        <td><a href="https://www.dedeen2a.tk/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_en2a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_en2a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dede_en2b</td>
+                        <td><a href="https://dedeen2b.tk/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_en2b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_en2b/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dede_en3a</td>
+                        <td><a href="https://dedeen3a.web.app/home">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_en3a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_en3a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dede_en3b</td>
+                        <td><a href="https://dedeen3b.herokuapp.com/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_en3b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_en3b/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dede_es1a</td>
+                        <td><a href="http://3.212.207.144:3000/home">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_ens1a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es1a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es1b</td>
+                        <td><a href="https://dede-es1b.herokuapp.com/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es1b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es1b/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es1c</td>
+                        <td><a href="https://secure-oasis-78684.herokuapp.com/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es1c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es1c/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es2a</td>
+                        <td><a href="">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es2a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es2a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es2b</td>
+                        <td><a href="https://dede2b-webapp.herokuapp.com/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es2b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es2b/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es2c</td>
+                        <td><a href="">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es2c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es2c/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es3a</td>
+                        <td><a href="https://dede-es3a.herokuapp.com/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es3a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es3a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es3b</td>
+                        <td><a href="">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es3b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es3b/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es3c</td>
+                        <td><a href="http://54.161.229.97:3000/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es3c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es3c/">Technical documentation</a></td>
+                        <td><a href="slides/course2122/labs/Dede_es3c.pdf">Presentation</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es4a</td>
+                        <td><a href="http://ec2-44-204-145-82.compute-1.amazonaws.com:3000/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es4a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es4a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es4b</td>
+                        <td><a href="http://dedethlon.francecentral.cloudapp.azure.com:3000/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es4b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es4b/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es4c</td>
+                        <td><a href="http://dede-es4c.centralus.cloudapp.azure.com:3000/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es4c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es4c/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es5a</td>
+                        <td><a href="https://dede-es5a.herokuapp.com/">heroku</a><a
+                                href="http://20.228.137.74:3000/">azure</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es5a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es5a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+                -->
+                    <!-- <tr>
+    <td>Dede_es5b</td>
+    <td><a href="">app deployed</a></td>
+    <td><a href="https://github.com/Arquisoft/dede_es5b">source code</a></td>
+    <td><a href="https://arquisoft.github.io/dede_es5b/">Technical documentation</a></td>
+    <td></td>
+</tr> -->
+<!--
+                    <tr>
+                        <td>Dede_es5c</td>
+                        <td><a href="https://dede5cwebapp.herokuapp.com/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es5c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es5c/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es6a</td>
+                        <td><a href="https://dede-es6a.herokuapp.com/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es6a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es6a/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es6b</td>
+                        <td><a href="https://54.85.204.233:3000/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es6b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es6b/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dede_es6c</td>
+                        <td><a href="http://54.161.139.62:3000/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/dede_es6c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/dede_es6c/">Technical documentation</a></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            -->
+
+                <h2>Links</h2>
+
+                <h3>Coding style guides</h3>
+                <ul>
+                    <li><a href="https://github.com/i0natan/nodebestpractices">Node best practices</a>
+                </ul>
+
+                <h3>Software architecture documentation</h3>
+                <ul>
+                    <li><a href="http://arc42.org">Arc42</a></li>
+                    <li><a href="https://asciidoctor.org/">Asciidoctor</a></li>
+                    <li><a href="http://plantuml.com/">PlantUML</a></li>
+                    <li><a href="https://real-world-plantuml.com/">Real-world PlantUML</a></li>
+                    <li><a href="https://leanpub.com/arc42inpractice/read">Communicating Software Architectures</a>:
+                        lean,
+                        effective and painless documentation</li>
+                </ul>
+
+                <h3>Solid</h3>
+                <ul>
+                    <li><a href="https://forum.solidproject.org/">Forum</a></li>
+                    <li>Awesome solid links:
+                        <a href="https://github.com/kustomzone/awesome-solid">one</a>,
+                        <a href="https://github.com/itsee/awesome-solid">two</a>
+                    </li>
+                </ul>
+
+                <h3>Quality attributes</h3>
+                <ul>
+                    <li><a href="ISO25010.html">ISO25010: Quality attributes MindMap</a></li>
+                    <li><a href="http://iso25000.com/index.php/en/iso-25000-standards/iso-25010">ISO 25010 Software
+                            product
+                            quality</a></li>
+                </ul>
+
+        </article>
+    </main>
+</body>
+
+</html>
