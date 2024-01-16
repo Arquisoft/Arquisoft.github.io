@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8" />
+<title>Software architecture Course 22-23</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+<link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+<script src="https://dokie.li/scripts/dokieli.js"></script>
+</head>
+
+<body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ owl: http://www.w3.org/2002/07/owl# 
+ xsd: http://www.w3.org/2001/XMLSchema# 
+ dcterms: http://purl.org/dc/terms/ 
+ dctypes: http://purl.org/dc/dcmitype/ 
+ foaf: http://xmlns.com/foaf/0.1/ 
+ pimspace: http://www.w3.org/ns/pim/space# 
+ cc: https://creativecommons.org/ns# 
+ skos: http://www.w3.org/2004/02/skos/core# 
+ prov: http://www.w3.org/ns/prov# 
+ qb: http://purl.org/linked-data/cube# 
+ schema: http://schema.org/ 
+ void: http://rdfs.org/ns/void# 
+ rsa: http://www.w3.org/ns/auth/rsa# 
+ cert: http://www.w3.org/ns/auth/cert# 
+ wgs: http://www.w3.org/2003/01/geo/wgs84_pos# 
+ bibo: http://purl.org/ontology/bibo/ 
+ sioc: http://rdfs.org/sioc/ns# 
+ doap: http://usefulinc.com/ns/doap# 
+ dbr: http://dbpedia.org/resource/ 
+ dbp: http://dbpedia.org/property/ 
+ sio: http://semanticscience.org/resource/ 
+ opmw: http://www.opmw.org/ontology/ 
+ deo: http://purl.org/spar/deo/ 
+ doco: http://purl.org/spar/doco/ 
+ cito: http://purl.org/spar/cito/ 
+ fabio: http://purl.org/spar/fabio/ 
+ oa: http://www.w3.org/ns/oa# 
+ as: https://www.w3.org/ns/activitystreams# 
+ ldp: http://www.w3.org/ns/ldp# 
+ solid: http://www.w3.org/ns/solid/terms# 
+ acl: http://www.w3.org/ns/auth/acl# 
+ dio: https://w3id.org/dio#" typeof="schema:CreativeWork 
+ sioc:Post 
+ prov:Entity">
+
+
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="http://arquisoft.github.io" title="Home page">Home</a></li>
+                    <li><a href="#lectureNodes" title="Go to lecture notes">Lecture notes</a></li>
+                    <li><a href="#seminars" title="Seminars info">Seminars</a></li>
+                    <li><a href="#labs" title="Labs">Labs</a></li>
+                    <li><a href="https://arquisoft.github.io/#Conferences" title="Conferences">Conferences</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article about="" typeof="schema:Article">
+            <h1>Software Architecture Course - 2023-24 edition</h1>
+            <div id="authors">
+                <ul>
+                    <li><a href="http://labra.weso.es/" about="http://labra.weso.es#me" property="schema:name"
+                            typeof="http://xmlns.com/foaf/0.1/Person">Jose Emilio Labra Gayo</a></li>
+                    <li><a href="https://pglez82.github.io/" about="https://pglez82.github.io/" property="schema:name"
+                            typeof="http://xmlns.com/foaf/0.1/Person">Pablo González</a></li>
+                    <li><a href="https://www.linkedin.com/in/jorge-%C3%A1lvarez-fidalgo-98b840199/"
+                            property="schema:name"
+                            typeof="http://xmlns.com/foaf/0.1/Person">Jorge Álvarez Fidalgo</a></li>
+                    <li><a href="https://www.linkedin.com/in/augustocristian/"
+                            property="schema:name" typeof="http://xmlns.com/foaf/0.1/Person">Cristian Augusto Alonso</a></li>
+                </ul>
+
+                <ul id="affiliations">
+                    <li id="uniovi">
+                        <a about="http://www.wikidata.org/entity/Q2303432" rel="schema:url" typeof="schema:Organization"
+                            property="schema:name" href="http://uniovi.es">University of Oviedo, Spain</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 id="lectureNotes">Lecture notes material</h2>
+            <p>The video material has been copied from course 2020-21 when it was recorded</p>
+
+            <ul>
+                <a href="course2021/Contents.pdf">Summary of the contents in a single PDF file</a>
+                <a href="https://www.goodreads.com/list/show/160472.Software_architecture">Recommended books about
+                    Software architecture</a>
+            </ul>
+
+            <table border="1">
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Slides</th>
+                    <th>Video (English)</th>
+                    <th>Video (Spanish)</th>
+                </tr>
+                <tr>
+                    <td><time datetime="2023-01-25">25/Jan/2023</time></td>
+                    <td>Presentation</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE01_Presentation.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.TE01_Presentacion.pdf">Spanish</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><time datetime="2023-02-01">02/Feb/2023</time></td>
+                    <td>What is software architecture</td>
+                    <td><a href="slides/course2223/EN.ASW.TE02_Definitions.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te02_Definiciones.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/LvYFkgUjp7k">English (Part 1)</a>
+                        <a href="https://youtu.be/V4CKgNpGgGU">English (Part 2)</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/YvikY9oLYbg">Spanish (Part 1)</a>
+                        <a href="https://youtu.be/5u32UNGJ1B8">Spanish (Part 2)</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Communicating software architecture</td>
+                    <td><a href="slides/course2223/EN.ASW.TE03_Documentation.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te03_Documentación.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/OFilk-NnWoM">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/zVyCMwkJ0PQ">Spanish</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><time datetime="2023-02-08">08/Feb/2023</time></td>
+                    <td>Role of software architect and stakeholders</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE04_Rol_SoftwareArchitect.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te04_RolArquitectoSoftware.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/5lI9FAXjPPM">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/U61UZdy4fvE">Spanish</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Quality attributes</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE05_QualityAttributes.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te05_AtributosCalidad.pdf">Spanish</a></li>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/feodAUeGn0c">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/U1Vpk7TUj58">Spanish</a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><time datetime="2023-02-15">15/Feb/2023</time></td>
+                    <td>Conference: Software architecture, people and other juices<br/>Iván Arrizabálaga<br/>Director of Engineering at <a href="https://www.joor.com/">JOOR</a></td>
+                    <td><a href="slides/Conferences/20230215-SoftwareArch_people_other_juices.pdf">English</a></td>
+                    <td><a href="https://www.youtube.com/watch?v=9GQOcs-HG5A">English</a></td>
+                    <td><a href="https://www.youtube.com/watch?v=KwAHP5NNGmA">Spanish</a></td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="3"><time datetime="2023-02-22">22/Feb/2023</time></td>
+                    <td>Achieving software architecture</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE06_AchievingSoftwareArchitecture.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te06_AlcanzandoArquitecturaSoftware.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/rQGOSabg_aE">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/xnsPuPodZvk">Spanish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Software architecture techniques</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE07_ArchitectureTechniques.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te07_TecnicasArquitectura.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/ReCwBLmFL58">English</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/zYwYPIVer-M">Spanish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Software architecture taxonomies: Building</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE08_Construction.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te08_Construccion.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/Hbqo3FpkqIk">English (part 1)</a>
+
+                        <a href="https://youtu.be/vYzh_1wwtwc">English (part 2)</a>
+                        <!-- https://web.microsoftstream.com/video/c48cd870-4041-45f2-b410-a4903e77e151 -->
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/Z7RQh79Jv24">Spanish (part 1)</a>
+
+                        <a href="https://youtu.be/tjhqEdKrGCA">Spanish (part 2)</a>
+                        <!-- https://web.microsoftstream.com/video/f00d3600-ce58-4d57-b794-3359e57e2ea3 -->
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><time datetime="2023-03-01">01/Mar/2023</time></td>
+                    <td>Software architecture taxonomies: Modularity</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE09_Modularity.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te09_Modularidad.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/YbKLqfk7TQg">English (Part 1)</a>
+                        <!-- https://web.microsoftstream.com/video/36def84f-6f29-4295-a496-343266fb7dce -->
+
+                        <!-- https://web.microsoftstream.com/video/9bdf7566-6514-43f4-8d3b-adbbffd3e62b -->
+                        <a href="https://youtu.be/QlQQ3WPfakI">English (Part 2)</a>
+
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/Zokdw-fh0DM">Spanish (Part 1)</a>
+                        <!-- https://web.microsoftstream.com/video/bd21c2f0-54ad-4702-afd0-4c12b964bf3f -->
+
+                        <!-- https://web.microsoftstream.com/video/3f85dec2-bffa-4e4e-8204-3075edb52d36 -->
+                        <a href="https://youtu.be/CWkGDyUzlYE">Spanish (Part 2</a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><time datetime="2023-03-08">08/Mar/2023</time></td>
+                    <td>Software architecture taxonomies: Behaviour at runtime (Components and connectors), monolith
+                    </td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE10_Monolithic.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te10_Monolitico.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <!-- https://web.microsoftstream.com/video/6e6eb7ca-68c6-40f4-b1ca-818ff6c2d163 -->
+                        <a href="https://youtu.be/eeoXTScwppA">English (Part 1)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/0409823a-451b-4a8b-ad90-d6a870c07ddc -->
+                        <a href="https://youtu.be/dqSIHhT6qog">English (Part 2)</a>
+
+                        <!-- https://web.microsoftstream.com/video/b861db8a-d084-462d-aa97-f7265a7554d6 -->
+                        <a href="https://youtu.be/JtIuNVG5Q6E">English (Part 3)</a>
+
+                        <!-- https://web.microsoftstream.com/video/f6c5e39a-30b0-4950-8d33-a5f2423cdcfb -->
+                        <a href="https://youtu.be/iy649JYsKUQ">English (Part 4)</a>
+                    </td>
+                    <td>
+
+                        <!-- https://web.microsoftstream.com/video/00c74db4-b9d8-40bc-b936-a9e54fbe462c -->
+                        <a href="https://youtu.be/HXT1p4O9sQ8">Spanish (Part 1)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/e6a3dcb8-0501-4bf2-bc6f-18959b14600e -->
+                        <a href="https://youtu.be/_FBDZ7XX6Lc">Spanish (Part 2)</a>,
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><time datetime="2023-03-15">15/Mar/2023</time></td>
+                    <td>Conference: 7 years in an IT project<br />
+                        <a href="https://www.linkedin.com/in/rafaelfont/">Rafael F. Font</a></td> 
+                    <td>
+                        <a href="slides/Conferences/2023_7yearsITProject.pdf">Slides - English</a>
+                    </td>
+                    <td><a href="https://youtu.be/lgrbh4Wyhdw">Video (English)</a>
+                    </td>
+                    <td><a href="https://youtu.be/q-6s0nUljC4">Video (Spanish)</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><time datetime="2023-03-22">22/Mar/2023</time></td>
+                    <td>Software architecture taxonomies: Behaviour at runtime (Components and connectors), distributed
+                        and big scale systems</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE11_DistributedBigDataSystems.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te11_DistribuidosBigData.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <!-- https://web.microsoftstream.com/video/eab65aba-15cf-4e34-806a-12dde72fc9b7 -->
+                        <a href="https://youtu.be/hl2_Phw-fEs">English (Part 1)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/ac5911d0-a9d5-4feb-8e17-3619db1a7477 -->
+                        <a href="https://youtu.be/3-aQ6GIg3wg">English (Part 2)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/4d0612c5-f257-4823-ba44-f24ed5b290c5 -->
+                        <a href="https://youtu.be/G9x5Qsdlasw">English (Part 3)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/1844d5d9-0837-41a1-82c5-52d1866893d1 -->
+                        <a href="https://youtu.be/q3bltJk4KOY">English (Part 4)</a><br />
+
+                    </td>
+                    <td>
+
+                        <!-- https://web.microsoftstream.com/video/09485303-45f0-4f63-9230-cd9f402562fb -->
+                        <a href="https://youtu.be/bY6gm6hZLcw">Spanish (Part 1)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/f9600cc0-22b8-4cd0-9252-11ab6f7b0c35  -->
+                        <a href="https://youtu.be/2mZAlBkU0N4">Spanish (Part 2)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/957d5162-b2b1-44c5-a84c-2fb77e686719  -->
+                        <a href="https://youtu.be/haN-1r7-fww">Spanish (Part 3)</a>,
+
+                        <!-- https://web.microsoftstream.com/video/dca57f36-5583-4e4f-8538-ad778fd6d642 -->
+                        <a href="https://youtu.be/PYtJtdCAmrE">Spanish (Part 4)</a><br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><time datetime="2023-03-29">29/Mar/2023</time></td>
+                    <td>Software architecture taxonomies: Allocation</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE12_Allocation.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te12_Disposicion.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <!-- https://web.microsoftstream.com/video/f9d7e93e-e952-4237-938c-0891a0c0c044 -->
+                        <a href="https://youtu.be/RDwZiqDejsw">English (Part 1)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/1259b693-f42b-49b7-83fd-087c8e7c8462 -->
+                        <a href="https://youtu.be/UDrZjZyCIdk">English (Part 2)</a><br />
+
+                    </td>
+                    <td>
+
+                        <!-- https://web.microsoftstream.com/video/47e71d86-1a3a-458d-99fe-4de9257c72b0 -->
+                        <a href="https://youtu.be/yhDMehwzG6k">Spanish (Part 1)</a><br />
+
+                        <!-- https://web.microsoftstream.com/video/247e0f07-a9d0-489f-9cc1-7a45bfd1f594  -->
+                        <a href="https://youtu.be/Yb-_wORIEiE">Spanish (Part 2)</a><br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><time datetime="2023-04-12">12/Apr/2023</time></td>
+                    <td>Software architecture taxonomies: Enterprise software architecture</td>
+                    <td>
+                        <a href="slides/course2223/EN.ASW.TE13_Business.pdf">English</a>,
+                        <a href="slides/course2223/ES.ASW.Te13_EntornoEmpresarial.pdf">Spanish</a>
+                    </td>
+                    <td>
+                        <!-- https://web.microsoftstream.com/video/b94a529e-c88c-4556-97eb-7d0be1cebd8d -->
+                        <a href="https://youtu.be/bYg2pjC25Zk">English</a><br />
+                    </td>
+                    <td>
+
+                        <!-- https://web.microsoftstream.com/video/2671115a-d609-458f-99e5-83819cbeddb9 -->
+                        <a href="https://youtu.be/WOTYjy6zcKg">Spanish</a><br />
+                    </td>
+                </tr>
+
+            </table>
+
+            <h2 id="seminars">Seminars</h2>
+
+            <p>Seminar assignment Description:
+                <a href="course2021/semAssignmentDescription.html">English</a>,
+                <a href="course2021/semDescripcionEnunciado.html">Spanish</a>
+            </p>
+
+            <p><a
+                    href="https://docs.google.com/document/d/1LGOSaqeexQJySmKHnHyC6zmmsP18RMUpcUfhB2oab4Q/edit?usp=sharing">Link
+                    to subjects</a></p>
+
+
+            <h3 id="seminarPresentations">Seminar presentations and posts made by students</h3>
+            <table>
+                <tr>
+                    <td>Subject</td>
+                    <td>Seminar Es-1 (Spanish)</td>
+                    <td>Seminar Es-2 (Spanish)</td>
+                    <td>Seminar Es-3 (Spanish)</td>
+                    <td>Seminar En (English)</td>
+                </tr>
+                <tr>
+                    <td>
+                        cURL (<a href="https://www.se-radio.net/2022/03/episode-505-daniel-stenberg-on-25-years-with-curl/">Episode 505</a>)
+                    </td>
+                    <td>Team Es1-01
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es1-01.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es1-01.pdf">post</a>
+                        <br />
+                    </td>
+                    <td>
+                        Team Es2-01
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es2-01.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-01.pdf">post</a><br />
+                    </td>
+                    <td>
+                        Team Es3-01
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es3-01.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es3-01.pdf">post</a>
+                    </td>
+                    <td>Team En-01
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-En-01.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-En-01.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Developer Experience (<a href="https://www.se-radio.net/2022/08/episode-524-abi-noda-on-developer-experience/">Episode 524</a>)</td>
+                    <td>Team Es1-02
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es1-02.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es1-02.pdf">post</a>
+                    </td>
+                    <td>Team Es2-02
+                        <br />
+                        <a href="slides/course2223/seminars/SlidesEs2-02.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/DocEs2-02.pdf">post</a>
+                    </td>
+                    <td>Team Es3-02
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es3-02.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es3-02.pdf">post</a>
+                    </td>
+                    <td>Team En-02
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-En1-02.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-En1-02.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Software design and modularity (<a href="https://www.se-radio.net/2022/07/episode-520-john-ousterhout-on-a-philosophy-of-software-design/">Episode 520</a>)</td>
+                    <td>Team Es1-03<br />
+                        <a href="slides/course2223/seminars/Sem-Es1-03.pdf">slides</a><br />
+                        <a href="slides/course2223/seminars/Doc-Es1-03.pdf">post</a>
+                    </td>
+                    <td> Team Es2-03
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es2-03.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-03.pdf">post</a>
+                    </td>
+                    <td>Team Es3-03
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es3-03.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es3-03.pdf">post</a>
+                    </td>
+                    <td>Team En-03
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-En-03.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-En-03.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Technical debt (<a href="https://www.se-radio.net/2021/10/episode-481-ipek-ozkaya-on-managing-technical-debt/">Episode 481</a>)</td>
+                    <td>Team Es1-04
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es1-04.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es1-04.pdf">post</a>
+                    </td>
+                    <td>Team Es2-04
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es2-04.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-04.pdf">post</a>
+                    </td>
+                    <td>Team Es3-04
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es3-04.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es3-04.pdf">post</a>
+                    </td>
+                    <td>Team En-04
+                        <br/>
+                        <a href="slides/course2223/seminars/Sem-En1-04.pdf">slides</a>
+                        <br/>
+                        <a href="slides/course2223/seminars/Doc-En1-04.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DevOps anti-patterns (<a href="https://www.se-radio.net/2021/04/episode-457-jeffery-d-smith-on-devops-anti-patterns/">Episode 457</a>)</td>
+                    <td>Team Es1-05
+                        <br>
+                        <a href="slides/course2223/seminars/Sem_Es1-05.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc_Es1-05.pdf">post</a>
+                    </td>
+
+                    <td>Team Es2-05
+                        <br>
+                        <a href="slides/course2223/seminars/Sem-Es2-05.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-05.pdf">post</a>
+                    </td>
+                    <td>Team Es3-05
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es3-05.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es3-05.pdf">post</a>
+                    </td>
+
+                    <td>Team En-05
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-En-05.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-En-05.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fallacies of distributed computing (<a href="https://www.se-radio.net/2021/07/episode-470-l-peter-deutsch-on-the-fallacies-of-distributed-computing/">Episode 470</a>)</td>
+                    <td>Team Es1-06
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es1-06.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es1-06.pdf">post</a>
+                    </td>
+                    <td>Team Es2-06
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es2-06.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-06.pdf">post</a>
+                    </td>
+                    <td>Team Es3-06
+                        <br />
+                        <a href="slides/course2223/seminars/Slides-Es3-06.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es3-06.pdf">post</a>
+                    </td>
+                    <td>Team En-06
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-En-06.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-En-06.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Service Level Objectives (<a href="https://www.se-radio.net/2023/01/episode-548-alex-hidalgo-on-implementing-service-level-objectives/">Episode 548</a>)</td>
+                    <td>Team Es1-07
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es1-07.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es1-07.pdf">post</a>
+                    </td>
+                    <td>Team Es2-07
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es2-07.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-07.pdf">post</a>
+                    </td>
+                    <td>Team Es3-07
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es3-07.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es3-07.pdf">post</a>
+                    </td>
+                    <td>Team En-07
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-En-07.pdf">slides</a>
+                        <br />
+                        ???
+                        <!--<a href="slides/course2223/seminars/Sem-En">slides</a>-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>Immutable architecture (<a href="https://www.se-radio.net/2021/02/episode-447-michael-perry-on-immutable-architecture/">Episode 447</a>)</td>
+                    <td>Team Es1-08
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es1-08.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es1-08.pdf">post</a>
+                    </td>
+                    <td>Team Es2-08 <br />
+                        <a href="slides/course2223/seminars/Sem-Es2-08.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-08.pdf">post</a>
+                    </td>
+
+                    <td>Team Es3-08
+                        <br />
+                        <a href="slides/course2223/seminars/SlidesEs3-08.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/DocEs3-08.pdf">post</a>
+                    </td>
+                    <td>Team En-08
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-En1-08.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-En1-08.pdf">post</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Architecture evolution (<a href="https://www.se-radio.net/2022/08/episode-525-randy-shoup-on-evolving-architecture-and-organization-at-ebay/">Episode 525</a>)</td>
+                    <td>Team Es1-09
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es1-09.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es1-09.pdf">post</a>
+                    </td>
+                    <td>Team Es2-09
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es2-09.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-09.pdf">post</a>
+                    </td>
+                    <td>Team Es3-09
+                        <br />
+                        ???
+                        <!--<a href="slides/course2223/seminars/SlidesEs3-09.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/DocEs3-09.pdf">post</a>-->
+                    </td>
+
+                    <td>Team En-09
+                        <br />
+                        <a href="slides/course2223/seminars/Slides_S-En-09.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc_S-En-09.pdf">post</a>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Software Heritage Archive (<a href="https://www.se-radio.net/2022/11/episode-538-roberto-di-cosmo-on-archiving-public-software-at-massive-scale/">Episode 538</a>)</td>
+                    <td>Team Es1-10
+                        <br />
+                        <a href="slides/course2223/seminars/SeminarioGrupoEs1-10-SoftwareHeritage.pdf">slides</a>
+                        <br />
+                        <!--<a href="slides/course2223/seminars/DocEs1-10.pdf">post</a>-->
+                    </td>
+                    <td>Team Es2-10
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es2-10.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es2-10.pdf">post</a>
+                    </td>
+                    <td>Team Es3-10
+                        <br />
+                        <a href="slides/course2223/seminars/Sem-Es3-10.pdf">slides</a>
+                        <br />
+                        <a href="slides/course2223/seminars/Doc-Es3-10.pdf">post</a>
+                    </td>
+                    <td>Team En-10
+                        <br>
+                        <a href="slides/course2223/seminars/EN.ASW.TE10_.Software_heritage_archive.pdf">slides</a>
+                        <br>
+                        <a href="slides/course2223/seminars/Doc-EN-10-Software_heritage_archive.pdf">post</a>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h2 id="labs">Labs</h3>
+                Lab Assignment Description:
+                <a href="course2223/labAssignmentDescription.html">English</a>,
+                <a href="course2223/labEnunciadoPractica.html">Spanish</a>
+
+                <ul>
+                    <li>Week 1. Git and github:
+                        <a href="slides/course2223/labs/EN.ASW.PL01_Github_2023.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL01_Github_2023.pdf">Spanish</a>
+                    </li>
+                    <li>Week 2. Documentation:
+                        <a href="slides/course2223/labs/EN.ASW.PL02_Documentacion.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL02_Documentacion.pdf">Spanish</a>
+                    </li>
+                    <li>Week 3. Introduction to React and Solid:
+                        <a href="slides/course2223/labs/EN.ASW.PL03.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL03.pdf">Spanish</a>
+                    </li>
+                    <li>Week 4. Review of 1st deliverable: first draft of technical documentation</li>
+                    <li>Week 5. Building automation and dependency management:
+                        <a href="slides/course2223/labs/EN.ASW.PL05.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL05_Automatizacion_Construccion.pdf">Spanish</a>
+                    </li>
+                    <li>Week 6. Distribution and deployment:
+                        <a href="slides/course2223/labs/EN.ASW.PL06.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL06.pdf">Spanish</a>
+
+                    </li>
+                    
+                    <li>Week 7: Review of 2nd deliverable: 1st prototype</li>
+                    <li>Week 8. Test-driven-development and continuous integration:
+                        <a href="slides/course2223/labs/EN.ASW.PL08.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL08_CI_TDD.pdf">Spanish</a>
+                    </li>
+                    
+                    <li>Week 9. Acceptance tests:
+                        <a href="slides/course2223/labs/EN.ASW.PL09.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL09_PruebasAceptacion.pdf">Spanish</a>
+                    </li>
+
+                    
+                    <li>Day 10. Review of 3rd deliverable: 1st release with Documentation + prototype synchronized</li>
+
+                    <li>Day 11. Load tests and other tests:
+                        <a href="slides/course2223/labs/EN.ASW.PL11.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL11_PruebasCarga.pdf">Spanish</a>
+                    </li>
+                    <li>Day 12. Monitoring/Profiling
+                        <a href="slides/course2223/labs/EN.ASW.PL12.pdf">English</a>,
+                        <a href="slides/course2223/labs/ES.ASW.PL12_MonitorizacionProfiling.pdf">Spanish</a>
+                    </li>
+
+
+<h2 id="SolidChallenge">Solid Challenge 2023</h2>          
+<p>The following table contains the student's projects that participate in the Solid Challenge</p>
+<table>
+    <tr>
+        <td>Team</td>
+        <td>App</td>
+        <td>Source code</td>
+        <td>Docs</td>
+        <td>Promotional Video<br/>For Solid challenge</td>
+    </tr>
+  <tr>
+   <td>Lomap_es3a</td>
+   <td><a href="https://lomapes3a.azurewebsites.net/">Web app</a></td>
+   <td><a href="https://github.com/Arquisoft/lomap_es3a">Repo</a></td>
+   <td><a href="https://arquisoft.github.io/lomap_es3a/">Technical documentation</a></td>
+   <td><a href="https://www.youtube.com/watch?v=7wCy9Ya40LY">Promotional video</a></td>
+  <tr>
+  </tr>  
+   <td>Lomap_en3a</td>
+   <td><a href="https://lomapen3adeploy.qatarcentral.cloudapp.azure.com/">Web app</a></td>
+   <td><a href="https://github.com/Arquisoft/lomap_en3a">Repo</a></td>
+   <td><a href="https://arquisoft.github.io/lomap_en3a/">Technical documentation</a></td>
+   <td><a href="https://www.youtube.com/watch?v=atiKpwT-FuE">Promotional video</a></td>
+  </tr>
+  <tr>
+   <td>Lomap_es5c</td>
+   <td><a href="https://lomap5c.netlify.app/">Web app</a></td>
+   <td><a href="https://github.com/Arquisoft/lomap_es5c">Repo</a></td>
+   <td><a href="https://arquisoft.github.io/lomap_es5c/">Technical documentation</a></td>
+   <td><a href="https://github.com/Arquisoft/lomap_es5c/blob/master/assets/lomapes5c-presentation.mp4">Promotional video</a></td>
+  </tr>
+ <tr>
+   <td>Lomap_en2a</td>
+   <td><a href="https://arquisoft.github.io/lomap_en2a/">Web app</a></td>
+   <td><a href="https://github.com/Arquisoft/lomap_en2a">Repo</a></td>
+   <td><a href="https://arquisoft.github.io/lomap_en2a/docs/">Technical documentation</a></td>
+   <td><a href="https://www.youtube.com/watch?v=DRBpqaiGb58&t=19s&ab_channel=LomapEn2a">Promotional video</a></td>
+  </tr>
+</table> 
+
+
+<h2 id="StudentProjects">All student's projects</h2>
+
+  <p>The following list contains the projects made by the students.
+
+                <table>
+                    <tr>
+                        <td>Team</td>
+                        <td>App</td>
+                        <td>Source code</td>
+                        <td>Docs</td>
+                        <td>Presentation</td>
+                    </tr>
+                    <tr>
+                        <td>Lomap_en1a</td>
+                        <td><a href="https://lomapen1a.cloudns.ph">App deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_en1a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_en1a/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_en1a.pdf">slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lomap_en1b</td>
+                        <td><a href="http://lomap.mariopdev.com">LomapEn1B App</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_en1b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_en1b/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/Slides-lomap_en1b.pdf">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lomap_en2a</td>
+                        <td><a href="https://arquisoft.github.io/lomap_en2a/">Deployed app</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_en2a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_en2a/docs">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_en2a.pdf">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lomap_en2b</td>
+                        <td><a href="http://172.162.240.176:3000/">App</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_en2b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_en2b/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_en2b.pdf" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lomap_en3a</td>
+                        <td><a href="https://lomapen3a.cloudns.ph">App</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_en3a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_en3a/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_en3a.pdf">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lomap_en3b</td>
+                        <td><a href="https://lomapen3b.francecentral.cloudapp.azure.com/">App</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_en3b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_en3b/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_en3b.pdf" target="_blank">slides</a>
+                        
+                    </tr>
+                    <tr>
+                        <td>Lomap_es1a</td>
+                        <td><a href="https://20.108.13.14">app</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es1a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es1a/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/Slides-lomap_es1a.pdf" target="_blank">slides</a>
+                            <br />
+                            <a href="https://www.youtube.com/watch?v=8jDXuokrXMs">demo video</a>
+                            </td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es1b1</td>
+                        <td><a href="https://20.25.10.184">app</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es1b1">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es1b1/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/Slides-lomap_es1b1.pdf" target="_blank">slides</a>
+                            <br />
+                            <a href="https://unioviedo-my.sharepoint.com/personal/uo284541_uniovi_es/_layouts/15/stream.aspx?id=%2Fpersonal%2Fuo284541%5Funiovi%5Fes%2FDocuments%2Fdemo%2Emp4&ga=1">demo video</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lomap_es1b2</td>
+                        <td>???</td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es1b2">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es1b2/">Technical documentation</a></td>
+                        <td>
+                         <a href="slides/course2223/labs/students/Lomap_es1b2.pdf" target="_blank">slides</a>
+                            <br />
+                            <a href="https://unioviedo-my.sharepoint.com/:v:/g/personal/uo265314_uniovi_es/EcuJBHmyrcBOj5xfqWyeLNkBXmqFpp4_F1eZi06VN-kznw?e=S4Sn2K">demo</a>
+                        
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es1c</td>
+                        <td><a href="https://lomapes1c.netlify.app/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es1c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es1c/">Technical documentation</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es1c/blob/master/docs/presentation/Presentation.pdf">Presentation</a></td>
+                    </tr>
+
+<!--                    <tr>
+                        <td>Lomap_es2a</td>
+                        <td>???</td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es2a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es2a/">Technical documentation</a></td>
+                        <td>???</td>
+                    </tr>
+                -->
+                    <tr>
+                        <td>Lomap_es2b</td>
+                        <td><a href="https://20.19.208.114/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es2b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es2b/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_es2b.pdf">Presentation</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es2c</td>
+                        <td><a href="https://lomapes2c.eastus.cloudapp.azure.com/">LoMap_es2c</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es2c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es2c/">Technical documentation</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es2c/tree/media/media">Media</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es3a</td>
+                        <td><a href="https://lomapes3a.azurewebsites.net/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es3a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es3a/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_es3a.pdf">Presentation</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es3b</td>
+                        <td><a href="https://20.90.83.130/">app deployed</td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es3b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es3b/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_es3b.pdf">Presentation</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es3c</td>
+                        <td><a href="https://98.71.248.38/">App</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es3c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es3c/">Technical documentation</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es3c/blob/master/Presentaci%C3%B3n.pdf">Presentation</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es4a</td>
+                        <td><a href="https://gonzalo-rr.github.io/lomap_es4a/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es4a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es4a/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_es4a.pdf">Presentation</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es4b</td>
+                        <td><a href="https://lomapes4b.netlify.app/">App</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es4b">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es4b/">Technical documentation</a></td>
+                        <td><a href="https://unioviedo-my.sharepoint.com/:u:/g/personal/uo276467_uniovi_es/EcB7V_Ih_BpFk1Gx1mbTYPcBcHSL8KzwZplf_Pj5_wEJIA?e=bHxHpA">Presentation</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es4c</td>
+                        <td><a href="https://lomap-es4c-eeyat2o8a-lomap4c.vercel.app/">App deploy</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es4c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es4c/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_es4c.pdf">Slides</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lomap_es5a</td>
+                        <td><a href="https://franciscocoya.github.io/lomapes05a_production/" target="_blank">app deployed</a> · <a href="https://youtu.be/nkLxMZ8_4Dc" target="_blank" >demo</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es5a">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es5a/">Technical documentation</a></td>
+                        <td><a href="https://arquisoft.github.io/slides/course2223/labs/students/lomap_es5a.pdf" target="_blank">slides</a></td>
+                    </tr>
+                
+<!--                 <tr>
+                    <td>Lomap_es5b</td>
+                    <td>???</td>
+                    <td><a href="https://github.com/Arquisoft/lomap_es5b">source code</a></td>
+                    <td><a href="https://arquisoft.github.io/lomap_es5b/">Technical documentation</a></td>
+                    <td>???</td>
+                </tr> 
+            -->
+                <tr>
+                    <td>Lomap_es5c</td>
+                    <td><a href="https://lomap5c.netlify.app">lomap5c</a></td>
+                    <td><a href="https://github.com/Arquisoft/lomap_es5c">source code</a></td>
+                    <td><a href="https://arquisoft.github.io/lomap_es5c/">Technical documentation</a></td>
+                    <td><a href="https://github.com/Arquisoft/lomap_es5c/blob/master/assets/presentation.pdf">slides</a>  <a href="https://github.com/Arquisoft/lomap_es5c/blob/master/assets/WhatsApp%20Video%202023-05-06%20at%2014.15.01.mp4">video</a></td>
+
+                <tr>
+                    <td>Lomap_es6a</td>
+                    <td><a href="https://uo282944.github.io/lomap_6a_despliegue/">lomapes6a</a></td>
+                    <td><a href="https://github.com/Arquisoft/lomap_es6a">source code</a></td>
+                    <td><a href="https://arquisoft.github.io/lomap_es6a/">Technical documentation</a></td>
+                    <td><a href="slides/course2223/labs/students/LoMap_es6a.pdf">Presentation</a></td>
+                 </tr>
+
+                <tr>
+                    <td>Lomap_es6b</td>
+                    <td><a href="https://uo282249.github.io/lomap_es6b/">App</a></td>
+                    <td><a href="https://github.com/Arquisoft/lomap_es6b">source code</a></td>
+                    <td><a href="https://arquisoft.github.io/lomap_es6b/">Technical documentation</a></td>
+                    <td><a href="slides/course2223/labs/students/LoMap_es6b.pdf">Presentation</a></td>
+                </tr>
+
+                    <tr>
+                        <td>Lomap_es6c</td>
+                        <td><a href="https://arquisoft-lomap-es6c.netlify.app/">app deployed</a></td>
+                        <td><a href="https://github.com/Arquisoft/lomap_es6c">source code</a></td>
+                        <td><a href="https://arquisoft.github.io/lomap_es6c/">Technical documentation</a></td>
+                        <td><a href="slides/course2223/labs/students/lomap_es6c.pdf">Presentation</a></td>
+                    </tr>
+
+                </table>
+
+                <h2>Links</h2>
+
+                <h3>Coding style guides</h3>
+                <ul>
+                    <li><a href="https://github.com/i0natan/nodebestpractices">Node best practices</a>
+                </ul>
+
+                <h3>Software architecture documentation</h3>
+                <ul>
+                    <li><a href="http://arc42.org">Arc42</a></li>
+                    <li><a href="https://asciidoctor.org/">Asciidoctor</a></li>
+                    <li><a href="http://plantuml.com/">PlantUML</a></li>
+                    <li><a href="https://real-world-plantuml.com/">Real-world PlantUML</a></li>
+                    <li><a href="https://leanpub.com/arc42inpractice/read">Communicating Software Architectures</a>:
+                        lean,
+                        effective and painless documentation</li>
+                </ul>
+
+                <h3>Solid</h3>
+                <ul>
+                    <li><a href="https://forum.solidproject.org/">Forum</a></li>
+                    <li>Awesome solid links:
+                        <a href="https://github.com/kustomzone/awesome-solid">one</a>,
+                        <a href="https://github.com/itsee/awesome-solid">two</a>
+                    </li>
+                </ul>
+
+                <h3>Quality attributes</h3>
+                <ul>
+                    <li><a href="ISO25010.html">ISO25010: Quality attributes MindMap</a></li>
+                    <li><a href="http://iso25000.com/index.php/en/iso-25000-standards/iso-25010">ISO 25010 Software
+                            product
+                            quality</a></li>
+                </ul>
+
+        </article>
+    </main>
+</body>
+
+</html>
