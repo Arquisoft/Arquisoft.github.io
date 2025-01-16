@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
- <head>
- <meta charset="utf-8" />
- <title>Software architecture</title>
- <meta content="width=device-width, initial-scale=1" name="viewport" />
- <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
- <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
- <script src="https://dokie.li/scripts/dokieli.js"></script>    
- </head>
- <body 
-  about="" 
-  prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+
+<head>
+  <meta charset="utf-8" />
+  <title>Software architecture</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+  <link href="https://dokie.li/media/css/dokieli.css" media="all" rel="stylesheet" />
+  <script src="https://dokie.li/scripts/dokieli.js"></script>
+</head>
+
+<body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
    rdfs: http://www.w3.org/2000/01/rdf-schema# 
    owl: http://www.w3.org/2002/07/owl# 
    xsd: http://www.w3.org/2001/XMLSchema# 
@@ -43,300 +43,324 @@
    ldp: http://www.w3.org/ns/ldp# 
    solid: http://www.w3.org/ns/solid/terms# 
    acl: http://www.w3.org/ns/auth/acl# 
-   dio: https://w3id.org/dio#" 
-  typeof="schema:CreativeWork 
+   dio: https://w3id.org/dio#" typeof="schema:CreativeWork 
    sioc:Post 
    prov:Entity">
 
-<main>
-  <header>
-    <nav>
-  <ul>
-  <li><a href="http://arquisoft.github.io" title="Home page">Home</a></li>
-  <li><a href="course2324.html" title="Go to latest edition (2023-24)">Latest edition</a></li>
-  <li><a href="course2324.html#lectureNotes" title="Lectures">Lectures</a></li>
-  <li><a href="course2324.html#seminars" title="Seminars">Seminars</a></li>
-  <li><a href="course2324.html#labs" title="Labs">Labs</a></li>
-  <li><a href="#Conferences" title="Conferences">Conferences</a></li>
-</ul>
-</nav>
-</header>
+  <main>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="http://arquisoft.github.io" title="Home page">Home</a></li>
+          <li><a href="course2425.html" title="Go to latest edition (2024-25)">Latest edition</a></li>
+          <li><a href="course2425.html#lectureNotes" title="Lectures">Lectures</a></li>
+          <li><a href="course2425.html#seminars" title="Seminars">Seminars</a></li>
+          <li><a href="course2425.html#labs" title="Labs">Labs</a></li>
+          <li><a href="#Conferences" title="Conferences">Conferences</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<article about="" typeof="schema:Article">
+    <article about="" typeof="schema:Article">
 
-<h1>Software Architecture Course</h1>
+      <h1>Software Architecture Course</h1>
 
-<ul id="authors">
-  <li><a href="http://labra.weso.es/" 
-         resource="http://www.wikidata.org/entity/Q51602692" 
-         typeof="http://xmlns.com/foaf/0.1/Person">Jose Emilio Labra Gayo</a>,
-      <a href="http://uniovi.es">University of Oviedo, Spain</a>
-  </li>
-</ul>
+      <ul id="authors">
+        <li><a href="http://labra.weso.es/" resource="http://www.wikidata.org/entity/Q51602692"
+            typeof="http://xmlns.com/foaf/0.1/Person">Jose Emilio Labra Gayo</a>,
+          <a href="http://uniovi.es">University of Oviedo, Spain</a>
+        </li>
+      </ul>
 
-<section id="context">
-<h2>Context</h2>
+      <section id="context">
+        <h2>Context</h2>
 
-<p>This course is part of the <a href="http://ingenieriainformatica.uniovi.es/web/ingenieriainformatica/infoacademica/grado">Software Engineering degree</a> at the 
- <a href="http://ingenieriainformatica.uniovi.es/">School of Computer Science Engineering</a>. 
-It is also part of the specific training module titled Software engineering. 
-Other related subjects are 
-<a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=2998">Software Process Engineering</a>; 
-<a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=3004">Software Design</a>; 
-<a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=3025">Software Quality, validation and Verifying</a>; 
-<a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=3024">Requirements Engineering</a> and 
-Software Engineering Modelling.
+        <p>This course is part of the <a
+            href="http://ingenieriainformatica.uniovi.es/web/ingenieriainformatica/infoacademica/grado">Software
+            Engineering degree</a> at the
+          <a href="http://ingenieriainformatica.uniovi.es/">School of Computer Science Engineering</a>.
+          It is also part of the specific training module titled Software engineering.
+          Other related subjects are
+          <a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=2998">Software Process
+            Engineering</a>;
+          <a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=3004">Software Design</a>;
+          <a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=3025">Software Quality,
+            validation and Verifying</a>;
+          <a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=3024">Requirements
+            Engineering</a> and
+          Software Engineering Modelling.
 
-<p>The subject is compulsory and is taught in Spanish and English during the second semester of the third year of the Degree in Software Engineering.
+        <p>The subject is compulsory and is taught in Spanish and English during the second semester of the third year
+          of the Degree in Software Engineering.
 
-<p>It has 6 ECTS credits, which represent a total of 150 hours, 60 on-campus activities hours and 90 self-study hours.
+        <p>It has 6 ECTS credits, which represent a total of 150 hours, 60 on-campus activities hours and 90 self-study
+          hours.
 
-<p>From the organizational point of view, 
- the course will have two hours of lectures a week (for a total of 21 hours), 
- one hour seminar (for a total of 7 hours), 
- two hours of laboratory practice (for a total 28 hours), 
- and 2 group tutorials hours.
+        <p>From the organizational point of view,
+          the course will have two hours of lectures a week (for a total of 21 hours),
+          one hour seminar (for a total of 7 hours),
+          two hours of laboratory practice (for a total 28 hours),
+          and 2 group tutorials hours.
 
-</p>
+        </p>
 
-</section>
+      </section>
 
-<section id="syllabus">
-<h2>Syllabus</h2>
-<ul>
-<li> Software Architecture definition and basic concepts
- <ul>
-  <li>Software Architecture Definitions
-  <li>Role of Software Architect and Stakeholders
-  <li>Description and validation of Software Architectures
-  <li>Software Architecture Viewpoints and Perspectives
- </ul>
-<li>Software Architecture Taxonomies
-<li>Architectural tactics, styles and patterns
-<li>Allocation: Building, deployment and distribution
-<li>Modularity
-<li>Behaviour: Components and connectors
-<li>Integration
-<li>Business architectures
-</ul>
-</section>
+      <section id="syllabus">
+        <h2>Syllabus</h2>
+        <ul>
+          <li> Software Architecture definition and basic concepts
+            <ul>
+              <li>Software Architecture Definitions
+              <li>Role of Software Architect and Stakeholders
+              <li>Description and validation of Software Architectures
+              <li>Software Architecture Viewpoints and Perspectives
+            </ul>
+          <li>Software Architecture Taxonomies
+          <li>Architectural tactics, styles and patterns
+          <li>Allocation: Building, deployment and distribution
+          <li>Modularity
+          <li>Behaviour: Components and connectors
+          <li>Integration
+          <li>Business architectures
+        </ul>
+      </section>
 
-<section id="CourseEditions">
-<h2>Course editions</h2>
-<p>The course started in 2012-13 but we were using University of Oviedo's virtual campus infrastructure to store the material.
-<ul>
- <li><a href="course2324.html">Course 2023-24 (Current edition)</a></li>
- <li><a href="course2223.html">Course 2022-23</a></li>
- <li><a href="course2122.html">Course 2021-22</a></li>
- <li><a href="course2021.html">Course 2020-21</a></li>
- <li><a href="course1920.html">Course 2019-20</a></li>
- <li><a href="course1819.html">Course 2018-19</a></li>
- <li><a href="http://ocw.uniovi.es/course/view.php?id=177">Open Courseware edition as part of UbiCamp project (old editions of the course)</a></li>
-</ul>
-</section>
+      <section id="CourseEditions">
+        <h2>Course editions</h2>
+        <p>The course started in 2012-13 but we were using University of Oviedo's virtual campus infrastructure to store
+          the material.
+        <ul>
+          <li><a href="course2425.html">Course 2024-25 (Current edition)</a></li>
+          <li><a href="course2324.html">Course 2023-24</a></li>
+          <li><a href="course2223.html">Course 2022-23</a></li>
+          <li><a href="course2122.html">Course 2021-22</a></li>
+          <li><a href="course2021.html">Course 2020-21</a></li>
+          <li><a href="course1920.html">Course 2019-20</a></li>
+          <li><a href="course1819.html">Course 2018-19</a></li>
+          <li><a href="http://ocw.uniovi.es/course/view.php?id=177">Open Courseware edition as part of UbiCamp project
+              (old editions of the course)</a></li>
+        </ul>
+      </section>
 
-<section id="Labs">
-<h2>Laboratory assignments</h2>
-<p>The laboratory work will be done in teams of 5-8 students using <a href="https://github.com/arquisoft">github</a>.
-</p> 
-</section>
-
-
-<section id="Conferences">
-  <h2>Conferences</h2>
-  <p>During each course we organize several invited conferences by some professional experts 
-    related with software architecture. Here, you can see the conferences that have been organized 
-    in the last years</p> 
-  
-  <table>
-    <tr>
-    <td>Date</td><td>Presenter</td><td>Title</td><td>Material</td>
-    </tr>
-    <tr>
-      <td>3/Apr/2024</td>
-      <td><a href="https://www.linkedin.com/in/eriesgo/">Enrigue Riesgo Canal</a>. Director de Software y Operaciones de <a href="https://plexigrid.com/">Plexigrid</a>  
-      </td>
-      <td>Perspectives of Software Architecture</td>
-      <td>
-        <!--<a href="slides/Conferences/2023_7yearsITProject.pdf">Slides (English)</a>-->
-        <a href="https://youtu.be/Gyxz7Vfqkek">Video (English)</a>,
-        <a href="https://youtu.be/WzSF_trxpUc">Video (Spanish)</a>
-      </td>
-    </tr>    
-
-    <tr>
-      <td>6/Mar/2024</td>
-      <td>
-        <a href="https://www.linkedin.com/in/jorge-alvarez-alonso-14995b165/">Jorge Álvarez Alonso</a>, Software Engineer Lead at <a href="https://www.capgemini.com/">CapGemini</a>  
-      </td>
-      <td>Software architecture based on microservices</td>
-      <td>
-        <a href="slides/Conferences/2024_Microservicios_Jorge.pdf">Slides (English)</a>
-        <!--<a href="https://youtu.be/Gyxz7Vfqkek">Video (English)</a>,-->
-        <a href="https://youtu.be/2kHfxmggpNw">Video (Spanish)</a>
-      </td>
-    </tr>    
-
-    <tr>
-      <td>15/Mar/2023</td>
-      <td><a href="https://www.linkedin.com/in/rafaelfont/">Rafael F. Font</a>  
-      </td>
-      <td>7 years of an IT Project</td>
-      <td>
-        <a href="slides/Conferences/2023_7yearsITProject.pdf">Slides (English)</a>
-        <a href="https://youtu.be/lgrbh4Wyhdw">Video (English)</a>,
-        <a href="https://youtu.be/q-6s0nUljC4">Video (Spanish)</a>
-      </td>
-    </tr>    
-
-    <tr>
-      <td>15/Feb/2023</td>
-      <td><a href="https://www.linkedin.com/in/ivanarrizabalaga/">Iván Arrizabálaga Getino</a>, Director of Engineering at <a href="https://www.joor.com/">JOOR</a> 
-      </td>
-      <td>Software architecture, people and other juices</td>
-      <td>
-        <a href="slides/Conferences/20230215-SoftwareArch_people_other_juices.pdf">Slides (English)</a>
-        <a href="https://youtu.be/9GQOcs-HG5A">Video (English)</a>,
-        <a href="https://youtu.be/KwAHP5NNGmA">Video (Spanish)</a>
-      </td>
-    </tr>    
-
-    <tr>
-      <td>6th/Apr/2022</td>
-      <td><a href="https://www.linkedin.com/in/david-rico-fern%C3%A1ndez-573233a/">David Rico</a>, Manager Industry Asturias NTT DATA, <a href="https://www.nttdata.com/">NTT Data</a> <br/>
-        Eduardo Priego, Tech Lead, <a href="https://www.nttdata.com/">NTT Data</a><br/>
-        <a href="https://www.linkedin.com/in/mario-olea-perez-b87275145/">Mario Olea</a>, Tech Lead, <a href="https://www.nttdata.com/">NTT Data</a> 
-      </td>
-      <td>Microservices (Spanish)</td>
-      <td>
-        <a href="slides/Conferences/2022_Microservices_Uniovi.pdf">Slides (Spanish)</a>
-      </td>
-    </tr>    
-
-    <tr>
-      <td>16th/Mar/2022</td>
-      <td><a href="https://www.linkedin.com/in/pablobermejo/">Pablo Bermejo García</a>, Distinguised Software Architect<br/><a href="https://dxc.com/">DXC Technology</a></td>
-      <td>Avoiding cosplaying when designing software</td>
-      <td>
-        <a href="slides/Conferences/2022_Cosplaying_PabloBermejo.pdf">Slides</a>, 
-        <a href="https://www.youtube.com/watch?v=PJX1k0fAX4w">Video (English)</a>, 
-        <a href="https://www.youtube.com/watch?v=gQKn2CpMJ80">Video (Espanish)</a>
-      </td>
-    </tr>    
-
-    <tr>
-      <td>14th/Apr/2021</td>
-      <td><a href="https://www.jorgemanrubia.com/">Jorge Manrubia Díez</a>, Senior programmer at <a href="https://basecamp.com/">Basecamp</a></td>
-      <td>Fighting the merchants of complexity</td>
-      <td>
-        <a href="slides/Conferences/2021_04_fighting-complexity.pdf">Slides</a>, 
-        <a href="https://youtu.be/GdXOXncUB9M">Video (English)</a>, 
-        <a href="https://youtu.be/RWrCDY0gtIw">Video (Espanish)</a>
-      </td>
-    </tr>    
-
-    <tr>
-      <td>10th/Feb/2021</td>
-      <td>Ángel Maldonado, CEO, Pablo Cañal, Gema Rico, developers at <a href="https://www.empathy.co/">Empathy.co</a></td>
-      <td>Open Decentralization: SOLID and Empathy for new developers</td>
-      <td>
-        <a href="slides/Conferences/OpeningDecentralisation.pdf">Slides</a>, 
-        <a href="https://youtu.be/XzBxI3Ep7lU">Video (English)</a>, 
-        <a href="https://youtu.be/o5J4T827uuM">Video (Espanish)</a>
-      </td>
-    </tr>
-    <tr>
-    <td>1st/April/2020</td>
-    <td>Diego Berrueta, Principal Engineer, <a href="https://www.atlassian.com/">Atlassian</a></td>
-    <td>Scaling towards a thousand microservices</td>
-    <td>
-      <a href="https://arquisoft.github.io/slides/course1920/20200401_Scaling_Slides.pdf">Slides</a>, 
-      <a href="https://www.youtube.com/watch?v=2h-AOsDavB4">Video (English)</a>, 
-      <a href="https://www.youtube.com/watch?v=P26RV-ptzzU">Video (Espanish)</a>
-    </td>
-    </tr>
-    <tr>
-      <td>19/Feb/2020</td>
-      <td>Alejandro Juan García, Project Manager, <a href="https://www.empathy.co/">Empathy.co</a></td>
-      <td>Solid Search</td></td>
-      <td>
-        <a href="https://www.youtube.com/watch?v=xBopDO2NTxo">Video (Spanish)</a>
-      </td>
-    </tr>
-    <tr>
-    <td>12/Jun/2019</td>
-    <td>Mitzi Laszlo (Solid Manager at <a href="https://inrupt.com/">Inrupt</a>)</td>
-    <td>Solid presentation</td>
-    <td> 
-      <a href="slides/course1819/SolidPresentationOviedo.pdf">English</a>
-    </td>
-  </tr>
-  <tr>
-    <td>20/Mar/2019</td>
-    <td><a href="https://github.com/peibolsang/">Pablo Bermejo</a>, 
-      Digital Platform Engineering Manager at <a href="https://www.dxc.technology/">DXC Technology</a>
-    </td>
-    <td>Software Architecture #10YearsChallenge</td>
-    <td>
-    <a href="http://demo-architecture.s3-website-us-east-1.amazonaws.com/">Slides</a>,
-    <a href="https://github.com/peibolsang/architecture-presentation">Source code of slides</a>
-     </td>
-  </tr>
-  <tr>
-      <td>30/Jan/2019</td>
-      <td>Sergio Fernández, Software Development Engineer, <a href="https://www.amazon.com/">Amazon</a></td>
-      <td>Trends in Software Architecture: A professional (dis)orientation</td>
-      <td>
-<!--        <a href="https://www.youtube.com/watch?v=xBopDO2NTxo">Video (Spanish)</a> -->
-        <a href="https://www.slideshare.net/Wikier/trends-in-software-architecture-a-professional-desorientation">Slides</a>
-      </td>
-    </tr>
-    <tr>
-      <td>9/Apr/2018</td>
-      <td>Luis Fernández Palacio, Software architect, <a href="https://www.capgemini.com/">CapGemini</a></td>
-      <td>Software architecture based on microservices</td>
-      <td>
-        <a href="https://www.youtube.com/watch?v=dq7568Sjt1Q">Video</a>
-      </td>
-    </tr>
-    <tr>
-      <td>20/Apr/2017</td>
-      <td>Manuel Jesús Fernández, Quality department manager, <a href="https://www.mecalux.com/">Mecalux</a></td>
-      <td>Arquitectura del software del producto Mecalux EasyWMS</td>
-      <td>
-        <a href="slides/Conferences/Charla_Calidad_y_Arquitectura_EasyWMS_2017.pdf">Slides</a>,
-        <a href="https://www.youtube.com/watch?v=Lrair7XYq0k">Video</a>
-      </td>
-    </tr>
-    <tr>
-      <td>21/Mar/2017</td>
-      <td>Miguel Fernández, Senior Platform Engineer, <a href="http://github.com">Github</a></td>
-      <td>Refactoring systems at scale</td>
-      <td>
-        <a href="https://www.youtube.com/watch?v=AVi--gcHRC8">Video</a>
-      </td>
-    </tr>
-    <tr>
-      <td>14-15/Mar/2017</td>
-      <td>Iván Arrizabalaga Getino, CTO, <a href="https://zapiens.ai/en/">Zapiens</a></td>
-      <td>Zapiens: from legacy to production, and more</td>
-      <td>
-        <a href="slides/Conferences/blunder_legacy_production.pdf">Slides</a> 
-        <a href="https://www.youtube.com/watch?v=bBu89GG0AII">Video</a>
-      </td>
-    </tr>
-    </table>  
-</section>
-  
-<section id="Further">
-<h2>Further info</h2>
-<p>
-<a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=3011">Official information (English and Spanish)</a>
-</p>
-</section>
+      <section id="Labs">
+        <h2>Laboratory assignments</h2>
+        <p>The laboratory work will be done in teams of 5-8 students using <a
+            href="https://github.com/arquisoft">github</a>.
+        </p>
+      </section>
 
 
-</article>
-</main>
+      <section id="Conferences">
+        <h2>Conferences</h2>
+        <p>During each course we organize several invited conferences by some professional experts
+          related with software architecture. Here, you can see the conferences that have been organized
+          in the last years</p>
+
+        <table>
+          <tr>
+            <td>Date</td>
+            <td>Presenter</td>
+            <td>Title</td>
+            <td>Material</td>
+          </tr>
+          <tr>
+            <td>3/Apr/2024</td>
+            <td><a href="https://www.linkedin.com/in/eriesgo/">Enrigue Riesgo Canal</a>. Director de Software y
+              Operaciones de <a href="https://plexigrid.com/">Plexigrid</a>
+            </td>
+            <td>Perspectives of Software Architecture</td>
+            <td>
+              <!--<a href="slides/Conferences/2023_7yearsITProject.pdf">Slides (English)</a>-->
+              <a href="https://youtu.be/Gyxz7Vfqkek">Video (English)</a>,
+              <a href="https://youtu.be/WzSF_trxpUc">Video (Spanish)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>6/Mar/2024</td>
+            <td>
+              <a href="https://www.linkedin.com/in/jorge-alvarez-alonso-14995b165/">Jorge Álvarez Alonso</a>, Software
+              Engineer Lead at <a href="https://www.capgemini.com/">CapGemini</a>
+            </td>
+            <td>Software architecture based on microservices</td>
+            <td>
+              <a href="slides/Conferences/2024_Microservicios_Jorge.pdf">Slides (English)</a>
+              <!--<a href="https://youtu.be/Gyxz7Vfqkek">Video (English)</a>,-->
+              <a href="https://youtu.be/2kHfxmggpNw">Video (Spanish)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>15/Mar/2023</td>
+            <td><a href="https://www.linkedin.com/in/rafaelfont/">Rafael F. Font</a>
+            </td>
+            <td>7 years of an IT Project</td>
+            <td>
+              <a href="slides/Conferences/2023_7yearsITProject.pdf">Slides (English)</a>
+              <a href="https://youtu.be/lgrbh4Wyhdw">Video (English)</a>,
+              <a href="https://youtu.be/q-6s0nUljC4">Video (Spanish)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>15/Feb/2023</td>
+            <td><a href="https://www.linkedin.com/in/ivanarrizabalaga/">Iván Arrizabálaga Getino</a>, Director of
+              Engineering at <a href="https://www.joor.com/">JOOR</a>
+            </td>
+            <td>Software architecture, people and other juices</td>
+            <td>
+              <a href="slides/Conferences/20230215-SoftwareArch_people_other_juices.pdf">Slides (English)</a>
+              <a href="https://youtu.be/9GQOcs-HG5A">Video (English)</a>,
+              <a href="https://youtu.be/KwAHP5NNGmA">Video (Spanish)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>6th/Apr/2022</td>
+            <td><a href="https://www.linkedin.com/in/david-rico-fern%C3%A1ndez-573233a/">David Rico</a>, Manager
+              Industry Asturias NTT DATA, <a href="https://www.nttdata.com/">NTT Data</a> <br />
+              Eduardo Priego, Tech Lead, <a href="https://www.nttdata.com/">NTT Data</a><br />
+              <a href="https://www.linkedin.com/in/mario-olea-perez-b87275145/">Mario Olea</a>, Tech Lead, <a
+                href="https://www.nttdata.com/">NTT Data</a>
+            </td>
+            <td>Microservices (Spanish)</td>
+            <td>
+              <a href="slides/Conferences/2022_Microservices_Uniovi.pdf">Slides (Spanish)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>16th/Mar/2022</td>
+            <td><a href="https://www.linkedin.com/in/pablobermejo/">Pablo Bermejo García</a>, Distinguised Software
+              Architect<br /><a href="https://dxc.com/">DXC Technology</a></td>
+            <td>Avoiding cosplaying when designing software</td>
+            <td>
+              <a href="slides/Conferences/2022_Cosplaying_PabloBermejo.pdf">Slides</a>,
+              <a href="https://www.youtube.com/watch?v=PJX1k0fAX4w">Video (English)</a>,
+              <a href="https://www.youtube.com/watch?v=gQKn2CpMJ80">Video (Espanish)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>14th/Apr/2021</td>
+            <td><a href="https://www.jorgemanrubia.com/">Jorge Manrubia Díez</a>, Senior programmer at <a
+                href="https://basecamp.com/">Basecamp</a></td>
+            <td>Fighting the merchants of complexity</td>
+            <td>
+              <a href="slides/Conferences/2021_04_fighting-complexity.pdf">Slides</a>,
+              <a href="https://youtu.be/GdXOXncUB9M">Video (English)</a>,
+              <a href="https://youtu.be/RWrCDY0gtIw">Video (Espanish)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>10th/Feb/2021</td>
+            <td>Ángel Maldonado, CEO, Pablo Cañal, Gema Rico, developers at <a
+                href="https://www.empathy.co/">Empathy.co</a></td>
+            <td>Open Decentralization: SOLID and Empathy for new developers</td>
+            <td>
+              <a href="slides/Conferences/OpeningDecentralisation.pdf">Slides</a>,
+              <a href="https://youtu.be/XzBxI3Ep7lU">Video (English)</a>,
+              <a href="https://youtu.be/o5J4T827uuM">Video (Espanish)</a>
+            </td>
+          </tr>
+          <tr>
+            <td>1st/April/2020</td>
+            <td>Diego Berrueta, Principal Engineer, <a href="https://www.atlassian.com/">Atlassian</a></td>
+            <td>Scaling towards a thousand microservices</td>
+            <td>
+              <a href="https://arquisoft.github.io/slides/course1920/20200401_Scaling_Slides.pdf">Slides</a>,
+              <a href="https://www.youtube.com/watch?v=2h-AOsDavB4">Video (English)</a>,
+              <a href="https://www.youtube.com/watch?v=P26RV-ptzzU">Video (Espanish)</a>
+            </td>
+          </tr>
+          <tr>
+            <td>19/Feb/2020</td>
+            <td>Alejandro Juan García, Project Manager, <a href="https://www.empathy.co/">Empathy.co</a></td>
+            <td>Solid Search</td>
+            </td>
+            <td>
+              <a href="https://www.youtube.com/watch?v=xBopDO2NTxo">Video (Spanish)</a>
+            </td>
+          </tr>
+          <tr>
+            <td>12/Jun/2019</td>
+            <td>Mitzi Laszlo (Solid Manager at <a href="https://inrupt.com/">Inrupt</a>)</td>
+            <td>Solid presentation</td>
+            <td>
+              <a href="slides/course1819/SolidPresentationOviedo.pdf">English</a>
+            </td>
+          </tr>
+          <tr>
+            <td>20/Mar/2019</td>
+            <td><a href="https://github.com/peibolsang/">Pablo Bermejo</a>,
+              Digital Platform Engineering Manager at <a href="https://www.dxc.technology/">DXC Technology</a>
+            </td>
+            <td>Software Architecture #10YearsChallenge</td>
+            <td>
+              <a href="http://demo-architecture.s3-website-us-east-1.amazonaws.com/">Slides</a>,
+              <a href="https://github.com/peibolsang/architecture-presentation">Source code of slides</a>
+            </td>
+          </tr>
+          <tr>
+            <td>30/Jan/2019</td>
+            <td>Sergio Fernández, Software Development Engineer, <a href="https://www.amazon.com/">Amazon</a></td>
+            <td>Trends in Software Architecture: A professional (dis)orientation</td>
+            <td>
+              <!--        <a href="https://www.youtube.com/watch?v=xBopDO2NTxo">Video (Spanish)</a> -->
+              <a
+                href="https://www.slideshare.net/Wikier/trends-in-software-architecture-a-professional-desorientation">Slides</a>
+            </td>
+          </tr>
+          <tr>
+            <td>9/Apr/2018</td>
+            <td>Luis Fernández Palacio, Software architect, <a href="https://www.capgemini.com/">CapGemini</a></td>
+            <td>Software architecture based on microservices</td>
+            <td>
+              <a href="https://www.youtube.com/watch?v=dq7568Sjt1Q">Video</a>
+            </td>
+          </tr>
+          <tr>
+            <td>20/Apr/2017</td>
+            <td>Manuel Jesús Fernández, Quality department manager, <a href="https://www.mecalux.com/">Mecalux</a></td>
+            <td>Arquitectura del software del producto Mecalux EasyWMS</td>
+            <td>
+              <a href="slides/Conferences/Charla_Calidad_y_Arquitectura_EasyWMS_2017.pdf">Slides</a>,
+              <a href="https://www.youtube.com/watch?v=Lrair7XYq0k">Video</a>
+            </td>
+          </tr>
+          <tr>
+            <td>21/Mar/2017</td>
+            <td>Miguel Fernández, Senior Platform Engineer, <a href="http://github.com">Github</a></td>
+            <td>Refactoring systems at scale</td>
+            <td>
+              <a href="https://www.youtube.com/watch?v=AVi--gcHRC8">Video</a>
+            </td>
+          </tr>
+          <tr>
+            <td>14-15/Mar/2017</td>
+            <td>Iván Arrizabalaga Getino, CTO, <a href="https://zapiens.ai/en/">Zapiens</a></td>
+            <td>Zapiens: from legacy to production, and more</td>
+            <td>
+              <a href="slides/Conferences/blunder_legacy_production.pdf">Slides</a>
+              <a href="https://www.youtube.com/watch?v=bBu89GG0AII">Video</a>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="Further">
+        <h2>Further info</h2>
+        <p>
+          <a href="http://sies.uniovi.es/ofe-pod-jsf/ofertaFormativaServlet?asignatura=3011">Official information
+            (English and Spanish)</a>
+        </p>
+      </section>
+
+
+    </article>
+  </main>
 </body>
+
 </html>
